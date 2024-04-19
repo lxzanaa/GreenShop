@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
+    <title>GREENSHOP</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="header__container container">
             <a href="#"><img src="./img/header/greenshop.svg" alt="greenshop-logo"></a>
-            <ul class="header__container-list" >
-                <li class="header__container-item" ><a class="header__container-link active" href="#">Home</a></li>
-                <li class="header__container-item" ><a class="header__container-link" href="#">Shop</a></li>
-                <li class="header__container-item" ><a class="header__container-link" href="#">Plant Care</a></li>
-                <li class="header__container-item" ><a class="header__container-link" href="#">Blogs</a></li>
+            <ul class="header__container-list">
+                <li class="header__container-item"><a class="header__container-link active" href="#">Home</a></li>
+                <li class="header__container-item"><a class="header__container-link" href="#">Shop</a></li>
+                <li class="header__container-item"><a class="header__container-link" href="#">Plant Care</a></li>
+                <li class="header__container-item"><a class="header__container-link" href="#">Blogs</a></li>
             </ul>
-            <div class="header__container-login" >
+            <div class="header__container-login">
                 <a href="#"><img src="./img/header/header-search.svg" alt="search"></a>
                 <a href="#"><img src="./img/header/header-cart-shopping.svg" alt="cart-shopping"></a>
-                <a class="header__container-loginBtn btn" href="#"><span><img src="./img/header/Logout.svg" alt="Logout"></span>Login</a>
+                <a class="header__container-loginBtn btn" href="#"><span><img src="./img/header/Logout.svg"
+                            alt="Logout"></span>Login</a>
             </div>
         </div>
     </header>
@@ -28,22 +32,58 @@
     <section class="hero">
         <div class="hero__container container">
             <div>
-                <p class="hero__heading" >Welcome to GreenShop</p>
-                <h1 class="hero__title" >Let’s Make a Better <span class="hero__title-span" >Planet</span></h1>
-                <p class="hero__text" >We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+                <p class="hero__heading">Welcome to GreenShop</p>
+                <h1 class="hero__title">Let’s Make a Better <span class="hero__title-span">Planet</span></h1>
+                <p class="hero__text">We are an online plant shop offering a wide range of cheap and trendy plants. Use
+                    our plants to create an unique Urban Jungle. Order your favorite plants!</p>
                 <a class="hero__btn btn" href="#">SHOP NOW</a>
             </div>
             <div>
                 <img class="hero__img" src="./img/hero/hero-flower.png" alt="flower">
             </div>
-            <ul class="hero__pagination-list" >
-                <li class="hero__pagination-item" ></li>
-                <li class="hero__pagination-item" ></li>
-                <li class="hero__pagination-item" ></li>
+            <ul class="hero__pagination-list">
+                <li class="hero__pagination-item"></li>
+                <li class="hero__pagination-item"></li>
+                <li class="hero__pagination-item"></li>
             </ul>
+        </div>
+    </section>
+
+    <section class="section__plants">
+        <div class="section__plants-container container">
+            <div class="section__plants-sidebar">
+                <h3 class="section__sidebar-title">Categories</h3>
+                <ul class="section__sidebar-list" >
+                    <li class="section__sidebar-item active" >House Plants<span>(33)</span></li>
+                    <li class="section__sidebar-item" >Potter Plants<span>(12)</span></li>
+                    <li class="section__sidebar-item" >Seeds<span>(65)</span></li>
+                    <li class="section__sidebar-item" >Small Plants<span>(39)</span></li>
+                    <li class="section__sidebar-item" >Big Plants<span>(23)</span></li>
+                    <li class="section__sidebar-item" >Succulents<span>(17)</span></li>
+                    <li class="section__sidebar-item" >Trerrariums<span>(19)</span></li>
+                    <li class="section__sidebar-item" >Gardening<span>(13)</span></li>
+                    <li class="section__sidebar-item" >Accessories<span>(18)</span></li>
+                </ul>
+                <div class="section__sidebar-range-div" >
+                    <h3 class="section__sidebar-title-2" >Price Range</h3>
+                    <div class="section__sidebar-range" ><img src="./line.png" alt=""></div>
+                    <div class="section__sidebar-price" >Price: <span>$39 - $1230</span></div>
+                    <button class="section__sidebar-btn btn" >Filter</button>
+                </div>
+                <div class="section__sidebar-size-div" >
+                    <h3 class="section__sidebar-title" >Size</h3>
+                    <ul class="section__sidebar-list" >
+                        <li class="section__sidebar-item2 green-active" >Small <span>(119)</span></li>
+                        <li class="section__sidebar-item2" >Medium <span>(86)</span></li>
+                        <li class="section__sidebar-item2" >Large <span>(78)</span></li>
+                    </ul>
+                    <img class="section__sidebar-bannerImg" src="./img/plants-section/sidebar/Super-Sale-Banner.png" alt="Super Sale Banner">
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="./js/app.js"></script>
 </body>
+
 </html>
