@@ -30,3 +30,15 @@ sectionSidebarItem2.forEach(function (item, index) {
         item.classList.add("green-active");
     })
 })
+
+
+let sectionAsideItem = document.querySelectorAll(".section__aside-item")
+
+sectionAsideItem.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        sectionAsideItem.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})

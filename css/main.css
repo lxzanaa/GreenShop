@@ -3,7 +3,6 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
 :root {
     --main-color: #46A358;
     --pagination-color: #46A3584D;
@@ -207,15 +206,16 @@ body {
     padding-bottom: 47px;
 }
 
-/* .section__plants-container {
+.section__plants-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
-} */
+}
 
 .section__plants-sidebar {
     max-width: 310px;
     background-color: #FBFBFB;
+    padding-top: 14px;
 }
 
 .section__sidebar-title {
@@ -305,4 +305,66 @@ body {
 
 .section__sidebar-bannerImg {
     display: flex;
+}
+.section__plants-aside{
+    width: 840px;
+}
+.section__plants-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.section__aside-list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: space-between;
+}
+.section__aside-item {
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+.section__aside-item.active{
+    border-bottom: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 700;
+}
+.section__aside-sellect{
+    display: flex;
+    align-items: center;
+}
+.section__aside-sellect-span{
+    /* display: flex;
+    align-items: center; */
+    cursor: pointer;
+}
+.section__plants-main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
+}
+.section__plants-card {
+}
+.section__plants-img {
+    margin-bottom: 12px;
+
+}
+.section__plants-owner {
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+.section__plants-price {
+    color: #46A358;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
 }
