@@ -30,7 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.3px solid #46A35880;
-    padding-bottom: 14px;
+    padding-bottom: 12.5px;
 }
 
 .header__container-list {
@@ -68,7 +68,7 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
-    font-family: 'Cera Pro' , sans-serif;
+    font-family: 'Cera Pro', sans-serif;
     background-color: #46A358;
     padding: 7px 17px;
     border-radius: 6px;
@@ -79,13 +79,105 @@ body {
     border: 1px solid #46A358;
     transition: all 0.3 ease;
 }
-.header__container-loginBtn:hover{
-    transform: scale(1.05);    
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.header__container-loginBtn:active{
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
-    transform: scale(1);
+
+.header__container-loginBtn:hover {
+    transform: scale(1.05);
 }
 
-.btn {}
+.header__container-loginBtn:active {
+    opacity: 0.9;
+}
+
+.btn {
+    background-color: #46A358;
+    padding: 10px 26px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    opacity: 0.9;
+}
+
+.hero{
+    padding-bottom: 26px;
+}
+.hero__container {
+    position: relative;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__heading {
+    color: #3D3D3D;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.hero__title {
+    max-width: 650px;
+    color: #3D3D3D;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.hero__title-span {
+    color: #46A358;
+}
+
+.hero__text {
+    max-width: 557px;
+    color: #727272;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 44px;
+}
+
+.hero__btn {
+    font-family: 'Cera Pro', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #46A358;
+    text-decoration: none;
+}
+
+.hero__img {
+    width: 518px;
+    height: 518px;
+}
+.hero__pagination-list {
+    position: absolute;
+    bottom: 17px;
+    left: 580px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hero__pagination-item {
+    background-color: #46A3584D;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    list-style: none;
+}
+.hero__pagination-item:nth-child(2){
+    background-color: #46A358;
+}
