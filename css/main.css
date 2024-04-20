@@ -644,3 +644,45 @@ body {
     line-height: 169%;
     color: #727272;
 }
+
+.footer {
+    padding-top: 1px;
+    padding-bottom: 7px;
+}
+
+.footer__logo {
+    display: flex;
+    margin-right: 87px;
+}
+
+.footer__container {}
+
+.footer__container-contact {
+    display: flex;
+    align-items: center;
+    padding: 28px 23px;
+    background-color: #46A3581A;
+}
+
+.footer__container-contact-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 70px;
+}
+
+.footer__container-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__container-contact-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+    text-decoration: none;
+    align-items: center;
+}
