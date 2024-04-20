@@ -489,8 +489,6 @@ body {
     padding-bottom: 100px;
 }
 
-.blog__section-container {}
-
 .blog__section-texts {
     text-align: center;
     margin-bottom: 35px;
@@ -509,13 +507,12 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
-    margin-bottom: ;
 }
 
 .blog__section-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 43px;
 }
 
 .blog__section-card {
@@ -565,4 +562,85 @@ body {
     display: flex;
     align-items: center;
     gap: 3px;
+}
+
+.about__section-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fbfbfb;
+}
+
+.about__section-info {
+    padding: 0 34px 0 23px;
+    border-right: 1px solid #46A3581A;
+}
+
+.about__section-info:last-child {
+    border: none;
+}
+
+.about__section-info-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 9px;
+}
+
+.about__section-info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+}
+
+.about__section-form-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 18px;
+}
+
+.about__section-form-input {
+    display: flex;
+    border-radius: 6px;
+    width: 354px;
+    margin-bottom: 17px;
+}
+
+.about__section-input {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: 354px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #acacac;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.about__section-input-btn {
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 0 6px 6px 0;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.about__section-form-text {
+    width: 354px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 169%;
+    color: #727272;
 }
