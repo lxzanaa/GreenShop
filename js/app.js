@@ -53,3 +53,23 @@ sectionAsideBtns.forEach(function (item, index) {
         item.classList.add("active");
     })
 })
+
+let product = document.querySelectorAll('.shop__section-product')
+let mainImg = document.querySelector('.shop__section-main-image')
+
+product.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        mainImg.src = item.src
+    })
+})
+
+let shopSectionProduct = document.querySelectorAll(".shop__section-product")
+
+shopSectionProduct.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        shopSectionProduct.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
