@@ -106,6 +106,7 @@ body {
     padding: 10px 26px;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -776,6 +777,7 @@ body {
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    gap: 65px;
 }
 
 .shop__section-container-images {
@@ -833,6 +835,7 @@ body {
     align-items: center;
     border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
     margin-bottom: 15px;
+    justify-content: right;
 }
 
 .shop__section-about-flower-title-price {
@@ -840,8 +843,9 @@ body {
     font-size: 22px;
     line-height: 16px;
     color: #46a358;
-    margin-right: 260px;
     padding-bottom: 11px;
+    margin-right: auto;
+
 }
 
 .shop__section-about-flower-heading {
@@ -874,6 +878,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 23px;
 }
 
 .shop__section-size-item {
@@ -897,4 +902,80 @@ body {
     font-size: 18px;
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+.shop__section-counter {}
+
+.shop__section-counter-div {
+    display: flex;
+    align-items: center;
+}
+
+.shop__section-info-counter {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-right: 26px;
+}
+
+
+
+.shop__section-number {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #3d3d3d;
+}
+
+
+.count {
+    width: 33px;
+    height: 38px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border: none;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.count:active{
+    opacity: 0.8;
+}
+
+.shop__section-counter-btn-buy {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 32px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.shop__section-counter-btn-add {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    padding: 10px 32px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.shop__section-counter-btn-heart{
+    color: var(--main-color);
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    padding: 10px 10px 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
 }

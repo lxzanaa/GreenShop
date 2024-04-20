@@ -84,3 +84,24 @@ shopSectionSizeItem.forEach(function (item, index) {
         item.classList.add("active");
     })
 })
+
+let btnMinus = document.querySelector(".shop__section-button-minus")
+let btnPlus = document.querySelector(".shop__section-button-plus")
+let spanInput = document.querySelector(".shop__section-number")
+
+
+btnMinus.addEventListener('click', function () {
+    if (spanInput.textContent == 1) {
+        spanInput.textContent = 1
+    } else {
+        spanInput.textContent = spanInput.textContent - 1
+    }
+})
+
+btnPlus.addEventListener('click', function () {
+    if (spanInput.textContent == 20) {
+        spanInput.textContent = 20
+    } else {
+        spanInput.textContent = 1 * spanInput.textContent + 1
+    }
+})
