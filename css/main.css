@@ -360,7 +360,6 @@ body {
     margin-bottom: 90px;
 }
 
-.section__plants-card {}
 
 .section__plants-img {
     margin-bottom: 12px;
@@ -691,7 +690,6 @@ body {
     margin-bottom: 7px;
     background-color: FBFBFB;
     border-bottom: 1px solid #46a35833;
-    ;
 }
 
 
@@ -713,6 +711,13 @@ body {
     font-size: 14px;
     line-height: 30px;
     color: #3d3d3d;
+    transition: all 0.3s ease;
+}
+.footer__main-link:hover{
+    color: var(--main-color);
+}
+.footer__main-social{
+    margin-bottom: 33px;
 }
 
 .footer__main-social-list {
@@ -765,7 +770,6 @@ body {
     padding-bottom: 46px;
 }
 
-.shop__section-container {}
 
 .shop__section-container-images {
     display: flex;
@@ -787,7 +791,15 @@ body {
     outline: 1px solid var(--main-color);
 }
 
-.shop__section-main-img {}
+.shop__section-main-img {
+    position: relative;
+    background-color: #FBFBFB;
+}
+.shop__section-search{
+    position: absolute;
+    right: 19px;
+    top: 19px;
+}
 
 .shop__section-main-image {
     display: flex;
