@@ -869,3 +869,32 @@ body {
     color: #727272;
     margin-bottom: 24px;
 }
+
+.shop__section-size-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shop__section-size-item {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #727272;
+}
+
+.shop__section-size-item.active {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}

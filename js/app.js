@@ -63,11 +63,22 @@ product.forEach(function (item, index) {
     })
 })
 
+
 let shopSectionProduct = document.querySelectorAll(".shop__section-product")
 
 shopSectionProduct.forEach(function (item, index) {
     item.addEventListener('click', function () {
         shopSectionProduct.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
+let shopSectionSizeItem = document.querySelectorAll(".shop__section-size-item")
+
+shopSectionSizeItem.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        shopSectionSizeItem.forEach(function (element) {
             element.classList.remove("active")
         })
         item.classList.add("active");
