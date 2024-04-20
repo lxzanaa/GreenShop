@@ -42,3 +42,14 @@ sectionAsideItem.forEach(function (item, index) {
         item.classList.add("active");
     })
 })
+
+let sectionAsideBtns = document.querySelectorAll(".section__aside-btns")
+
+sectionAsideBtns.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        sectionAsideBtns.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})

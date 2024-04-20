@@ -3,6 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
 :root {
     --main-color: #46A358;
     --pagination-color: #46A3584D;
@@ -306,21 +307,25 @@ body {
 .section__sidebar-bannerImg {
     display: flex;
 }
-.section__plants-aside{
+
+.section__plants-aside {
     width: 840px;
 }
+
 .section__plants-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
 }
+
 .section__aside-list {
     display: flex;
     list-style: none;
     gap: 40px;
     justify-content: space-between;
 }
+
 .section__aside-item {
     color: #3D3D3D;
     font-weight: 400;
@@ -330,31 +335,38 @@ body {
     padding-bottom: 7px;
     cursor: pointer;
 }
-.section__aside-item.active{
+
+.section__aside-item.active {
     border-bottom: 2px solid var(--main-color);
     color: var(--main-color);
     font-weight: 700;
 }
-.section__aside-sellect{
+
+.section__aside-sellect {
     display: flex;
     align-items: center;
 }
-.section__aside-sellect-span{
+
+.section__aside-sellect-span {
     /* display: flex;
     align-items: center; */
     cursor: pointer;
 }
-.section__plants-main{
+
+.section__plants-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 33px;
+    margin-bottom: 90px;
 }
-.section__plants-card {
-}
+
+.section__plants-card {}
+
 .section__plants-img {
     margin-bottom: 12px;
 
 }
+
 .section__plants-owner {
     color: #3D3D3D;
     font-weight: 400;
@@ -362,9 +374,112 @@ body {
     line-height: 16px;
     margin-bottom: 6px;
 }
+
 .section__plants-price {
     color: #46A358;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
+}
+
+.section__aside-btn-div {
+    width: 215px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.section__aside-btns {
+    background-color: transparent;
+    color: #3D3D3D;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+    padding: 10px 12px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section__aside-btns:last-child {
+    padding: 8px 8px;
+}
+
+.section__aside-btns.active {
+    color: #FFFFFF;
+    background-color: var(--main-color);
+}
+
+.about__flower {
+    padding-top: 47px;
+    padding-bottom: 69px;
+
+}
+
+.about__flower-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__flower-card {
+    max-width: 586px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.about__flower-flower {
+    z-index: -1;
+}
+
+.mask-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    z-index: -1;
+}
+
+.about__flower-btn {
+    color: #FFFFFF;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 28px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.about__flower-btn:hover {
+    transform: scale(1.05);
+}
+
+.about__flower-btn:active {
+    opacity: 0.9;
+}
+
+.about__flower-title {
+    color: #3d3d3d;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 9px;
+}
+
+.about__flower-text {
+    color: #727272;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    margin-bottom: 25px;
 }
