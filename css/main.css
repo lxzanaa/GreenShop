@@ -713,10 +713,12 @@ body {
     color: #3d3d3d;
     transition: all 0.3s ease;
 }
-.footer__main-link:hover{
+
+.footer__main-link:hover {
     color: var(--main-color);
 }
-.footer__main-social{
+
+.footer__main-social {
     margin-bottom: 33px;
 }
 
@@ -770,6 +772,11 @@ body {
     padding-bottom: 46px;
 }
 
+.shop__section-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
 
 .shop__section-container-images {
     display: flex;
@@ -787,7 +794,8 @@ body {
     height: 100px;
     display: flex;
 }
-.shop__section-product.active{
+
+.shop__section-product.active {
     outline: 1px solid var(--main-color);
 }
 
@@ -795,7 +803,8 @@ body {
     position: relative;
     background-color: #FBFBFB;
 }
-.shop__section-search{
+
+.shop__section-search {
     position: absolute;
     right: 19px;
     top: 19px;
@@ -805,4 +814,39 @@ body {
     display: flex;
     width: 444px;
     height: 444px;
+}
+
+.shop__section-about {}
+
+.shop__section-about-flower {}
+
+.shop__section-about-flower-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 21px;
+}
+
+.shop__section-about-flower-price {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+}
+
+.shop__section-about-flower-title-price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 16px;
+    color: #46a358;
+    margin-right: 260px;
+    padding-bottom: 11px;
+}
+
+.shop__section-about-flower-heading {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-left: 11px;
 }
