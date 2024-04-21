@@ -160,7 +160,7 @@ shop__cartDelete.forEach(function (item, index) {
         item.style.display = "none";
         if (shop__cartCategoryCart[index]) {
             shop__cartCategoryCart[index].remove();
-        }else{}
+        } else { }
     });
 });
 

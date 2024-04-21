@@ -1444,8 +1444,7 @@ body {
 .checkout__form_main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
-    background-color: red;
+    max-width: 722px;
 }
 
 .checkout__form-main-input label span {
@@ -1463,4 +1462,36 @@ body {
     height: 40px;
     text-transform: capitalize;
     outline: none;
+}
+
+#countrySelect {
+    outline: none;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    height: 40px;
+    text-transform: capitalize;
+}
+
+#NumberSelect {
+    width: 78px;
+    outline: none;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    height: 40px;
+}
+
+#StateSelect {
+    outline: none;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    height: 40px;
+    text-transform: capitalize;
+}
+.Appartment::selection{
+    color: transparent;
+    background-color: transparent;
 }

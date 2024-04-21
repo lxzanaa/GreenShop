@@ -16,7 +16,8 @@
             <a href="#"><img src="./img/header/greenshop.svg" alt="greenshop-logo"></a>
             <ul class="header__container-list">
                 <li class="header__container-item"><a class="header__container-link" href="index.html">Home</a></li>
-                <li class="header__container-item"><a class="header__container-link active" href="shop.html">Shop</a></li>
+                <li class="header__container-item"><a class="header__container-link active" href="shop.html">Shop</a>
+                </li>
                 <li class="header__container-item"><a class="header__container-link" href="#">Plant Care</a></li>
                 <li class="header__container-item"><a class="header__container-link" href="#">Blogs</a></li>
             </ul>
@@ -33,54 +34,70 @@
         <p><b>Home /</b> Shop / Checkout </p>
     </div>
 
-    <section class="checkout__form" >
-        <div class="checkout__form-container container" >
-                <ul class="checkout__form-list" style="max-width: 883px;" >
-                    <li class="checkout__form-item" >Billing Address</li>
-                    <li class="checkout__form-item" >Your Order</li>
-                </ul>
+    <section class="checkout__form">
+        <div class="checkout__form-container container">
+            <ul class="checkout__form-list" style="max-width: 883px;">
+                <li class="checkout__form-item">Billing Address</li>
+                <li class="checkout__form-item">Your Order</li>
+            </ul>
 
-                <form  action="" class="checkout__form_main">
-                    <div class="checkout__form-main-input" >
-                        <label for="name">First Name <span>*</span></label>
-                        <input id="name" type="text">
-                    </div>
+            <form action="" class="checkout__form_main">
+                <div class="checkout__form-main-input">
+                    <label for="name">First Name <span>*</span></label>
+                    <input required id="name" type="text">
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="last name">Last Name <span>*</span></label>
-                        <input id="last name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label for="last name">Last Name <span>*</span></label>
+                    <input required id="last name" type="text">
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="name">First Name <span>*</span></label>
-                        <input id="name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label for="countrySelect">Country / Region <span>*</span></label>
+                    <select name="country" id="countrySelect">
+                        <!-- Optionlar JavaScript orqali yaratiladi -->
+                    </select>
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="last name">Last Name <span>*</span></label>
-                        <input id="last name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label for="TownCity">Town / City <span>*</span></label>
+                    <input required id="TownCity" type="text">
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="name">First Name <span>*</span></label>
-                        <input id="name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label for="Street Address">Street Address <span>*</span></label>
+                    <input required id="Street Address" type="text" placeholder="House number and street name">
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="last name">Last Name <span>*</span></label>
-                        <input id="last name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label style="color: transparent;" for="Appartment" class="Appartment">.</label>
+                    <input required id="Appartment" type="text" placeholder="Appartment, suite, unit, etc. (optional)">
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="name">First Name <span>*</span></label>
-                        <input id="name" type="text">
-                    </div>
+                <div class="checkout__form-main-input">
+                    <label for="StateSelect">State <span>*</span></label>
+                    <select name="state" id="StateSelect">
+                        <!-- Optionlar JavaScript orqali yaratiladi -->
+                    </select>
+                </div>
 
-                    <div class="checkout__form-main-input" >
-                        <label for="last name">Last Name <span>*</span></label>
-                        <input id="last name" type="text">
-                    </div>
-                </form>
+                <div class="checkout__form-main-input">
+                    <label for="Zip">Zip <span>*</span></label>
+                    <input required id="Zip" type="number">
+                </div>
+
+                <div class="checkout__form-main-input">
+                    <label for="email">Email address <span>*</span></label>
+                    <input required id="email" type="email">
+                </div>
+
+                <div class="checkout__form-main-input">
+                    <label for="NumberSelect">Select a country:</label>
+                    <select name="country" id="NumberSelect">
+                        <!-- Optionlar JavaScript orqali yaratiladi -->
+                    </select>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -107,7 +124,7 @@
             <form class="about__section-form">
                 <h3 class="about__section-form-title">Would you like to join newsletters?</h3>
                 <div class="about__section-form-input">
-                    <input class="about__section-input" required type="email" placeholder="enter your email address...">
+                    <input required class="about__section-input" required type="email" placeholder="enter your email address...">
                     <button class="about__section-input-btn" type="submit">Join</button>
                 </div>
                 <p class="about__section-form-text">We usually post offers and challenges in newsletter. We’re your
@@ -207,6 +224,300 @@
 
 
     <script src="./js/app.js"></script>
+    <script>
+        const countries = [
+            "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
+            "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
+            "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+            "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso",
+            "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic",
+            "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the",
+            "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus",
+            "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor",
+            "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
+            "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+            "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
+            "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy",
+            "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South",
+            "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya",
+            "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
+            "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco",
+            "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal",
+            "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway",
+            "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+            "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis",
+            "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
+            "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+            "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka",
+            "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania",
+            "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan",
+            "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
+            "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+        ];
+
+        const selectElement = document.getElementById("countrySelect");
+
+        countries.forEach(function (country) {
+            const option = document.createElement("option");
+            option.value = country;
+            option.textContent = country;
+            selectElement.appendChild(option);
+        });
+    </script>
+
+<script>
+    const state = [
+        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
+        "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
+        "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso",
+        "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic",
+        "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the",
+        "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus",
+        "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor",
+        "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
+        "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+        "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
+        "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy",
+        "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South",
+        "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya",
+        "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
+        "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco",
+        "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal",
+        "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway",
+        "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+        "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis",
+        "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
+        "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka",
+        "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania",
+        "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan",
+        "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
+        "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+    ];
+
+    const selectState = document.getElementById("StateSelect");
+
+    state.forEach(function (country) {
+        const option = document.createElement("option");
+        option.value = country;
+        option.textContent = country;
+        selectState.appendChild(option);
+    });
+</script>
+
+    <script>
+        // JavaScript kodini shu yerga yozamiz
+        const numbers = [
+            { code: "+93" },
+            { code: "+355" },
+            { code: "+213" },
+            { code: "+376" },
+            { code: "+244" },
+            { code: "+1-268" },
+            { code: "+54" },
+            { code: "+374" },
+            { code: "+61" },
+            { code: "+43" },
+            { code: "+994" },
+            { code: "+1-242" },
+            { code: "+973" },
+            { code: "+880" },
+            { code: "+1-246" },
+            { code: "+375" },
+            { code: "+32" },
+            { code: "+501" },
+            { code: "+229" },
+            { code: "+975" },
+            { code: "+591" },
+            { code: "+387" },
+            { code: "+267" },
+            { code: "+55" },
+            { code: "+673" },
+            { code: "+359" },
+            { code: "+226" },
+            { code: "+257" },
+            { code: "+238" },
+            { code: "+855" },
+            { code: "+237" },
+            { code: "+1" },
+            { code: "+236" },
+            { code: "+235" },
+            { code: "+56" },
+            { code: "+86" },
+            { code: "+57" },
+            { code: "+269" },
+            { code: "+243" },
+            { code: "+242" },
+            { code: "+506" },
+            { code: "+225" },
+            { code: "+385" },
+            { code: "+53" },
+            { code: "+357" },
+            { code: "+420" },
+            { code: "+45" },
+            { code: "+253" },
+            { code: "+1-767" },
+            { code: "+1-809" },
+            { code: "+593" },
+            { code: "+20" },
+            { code: "+503" },
+            { code: "+240" },
+            { code: "+291" },
+            { code: "+372" },
+            { code: "+268" },
+            { code: "+251" },
+            { code: "+679" },
+            { code: "+358" },
+            { code: "+33" },
+            { code: "+241" },
+            { code: "+220" },
+            { code: "+995" },
+            { code: "+49" },
+            { code: "+233" },
+            { code: "+30" },
+            { code: "+1-473" },
+            { code: "+502" },
+            { code: "+224" },
+            { code: "+245" },
+            { code: "+592" },
+            { code: "+509" },
+            { code: "+504" },
+            { code: "+36" },
+            { code: "+354" },
+            { code: "+91" },
+            { code: "+62" },
+            { code: "+98" },
+            { code: "+964" },
+            { code: "+353" },
+            { code: "+972" },
+            { code: "+39" },
+            { code: "+1-876" },
+            { code: "+81" },
+            { code: "+962" },
+            { code: "+7" },
+            { code: "+254" },
+            { code: "+686" },
+            { code: "+850" },
+            { code: "+82" },
+            { code: "+383" },
+            { code: "+965" },
+            { code: "+996" },
+            { code: "+856" },
+            { code: "+371" },
+            { code: "+961" },
+            { code: "+266" },
+            { code: "+231" },
+            { code: "+218" },
+            { code: "+423" },
+            { code: "+370" },
+            { code: "+352" },
+            { code: "+261" },
+            { code: "+265" },
+            { code: "+60" },
+            { code: "+960" },
+            { code: "+223" },
+            { code: "+356" },
+            { code: "+692" },
+            { code: "+222" },
+            { code: "+230" },
+            { code: "+52" },
+            { code: "+691" },
+            { code: "+373" },
+            { code: "+377" },
+            { code: "+976" },
+            { code: "+382" },
+            { code: "+212" },
+            { code: "+258" },
+            { code: "+95" },
+            { code: "+264" },
+            { code: "+674" },
+            { code: "+977" },
+            { code: "+31" },
+            { code: "+64" },
+            { code: "+505" },
+            { code: "+227" },
+            { code: "+234" },
+            { code: "+389" },
+            { code: "+47" },
+            { code: "+968" },
+            { code: "+92" },
+            { code: "+680" },
+            { code: "+970" },
+            { code: "+507" },
+            { code: "+675" },
+            { code: "+595" },
+            { code: "+51" },
+            { code: "+63" },
+            { code: "+48" },
+            { code: "+351" },
+            { code: "+974" },
+            { code: "+40" },
+            { code: "+7" },
+            { code: "+250" },
+            { code: "+1-869" },
+            { code: "+1-758" },
+            { code: "+1-784" },
+            { code: "+685" },
+            { code: "+378" },
+            { code: "+239" },
+            { code: "+966" },
+            { code: "+221" },
+            { code: "+381" },
+            { code: "+248" },
+            { code: "+232" },
+            { code: "+65" },
+            { code: "+421" },
+            { code: "+386" },
+            { code: "+677" },
+            { code: "+252" },
+            { code: "+27" },
+            { code: "+211" },
+            { code: "+34" },
+            { code: "+94" },
+            { code: "+249" },
+            { code: "+597" },
+            { code: "+46" },
+            { code: "+41" },
+            { code: "+963" },
+            { code: "+886" },
+            { code: "+992" },
+            { code: "+255" },
+            { code: "+66" },
+            { code: "+228" },
+            { code: "+676" },
+            { code: "+1-868" },
+            { code: "+216" },
+            { code: "+90" },
+            { code: "+993" },
+            { code: "+688" },
+            { code: "+256" },
+            { code: "+380" },
+            { code: "+971" },
+            { code: "+44" },
+            { code: "+1" },
+            { code: "+598" },
+            { code: "+998" },
+            { code: "+678" },
+            { code: "+379" },
+            { code: "+58" },
+            { code: "+84" },
+            { code: "+967" },
+            { code: "+260" },
+            { code: "+263" }
+        ];
+
+        // Select elementini tanlab olish
+        const selectNumber = document.getElementById("NumberSelect");
+
+        // Davlatlar ro'yxatidan har bir davlat uchun option elementini qo'shish
+        numbers.forEach(function (country) {
+            const option = document.createElement("option");
+            option.value = country.code;
+            option.textContent = `(${country.code})`;
+            selectNumber.appendChild(option);
+        });
+    </script>
 </body>
 
 </html>
