@@ -1116,8 +1116,8 @@ body {
 }
 
 .section__ReletedProducts-plants-div {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .section__ReletedProducts-pagination-list {
@@ -1140,3 +1140,97 @@ body {
 .section__ReletedProducts-pagination-item.active {
     background-color: var(--main-color);
 }
+
+.home-to-shop-to-shoopingCart {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.shopping__cart {
+    padding-top: 25px;
+}
+
+.shopping__cart-container {}
+
+.shop__cart-category-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    border-bottom: 0.30px solid #46a35880;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+    max-width: 782px;
+}
+
+.shop__cart-category-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+
+#shop__cart-category-item-pruduct {
+    margin-right: 145px;
+}
+
+.shop__cart-category-cart-main {
+    max-width: 782px;
+}
+
+.shop__cart-category-cart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* padding: 0 26px 0 0; */
+}
+.shop__cart-category-cart:last-child{
+    margin-bottom: 0;
+}
+
+.shop__cart-category-img {
+    margin-right: 14px;
+
+}
+
+.shop__cart-about-product {
+    margin-right: 98px;
+}
+
+.shop__cart-main-price {
+    margin-right: 92px;
+}
+
+.shop__section-info-counter-2 {
+    margin-right: 82px;
+    display: flex;
+    gap: 15px;
+}
+.shop__cart-total-price {
+    margin-right: 50px;
+}
+.count2{
+    width: 21px;
+    height: 25px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.count2:active{
+    opacity: 0.8;
+}
+
+.shop__cart-delete{
+    cursor: pointer;
+}
+.shop__cart-delete:active{
+    opacity: 0.8;
+}
+/* .shop__cart-delete.detele{
+    display: none;
+} */
