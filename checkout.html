@@ -23,7 +23,7 @@
             </ul>
             <div class="header__container-login">
                 <a href="#"><img src="./img/header/header-search.svg" alt="search"></a>
-                <a href="#"><img src="./img/header/header-cart-shopping.svg" alt="cart-shopping"></a>
+                <a href="cart.html"><img src="./img/header/header-cart-shopping.svg" alt="cart-shopping"></a>
                 <a class="header__container-loginBtn btn" href="#"><span><img src="./img/header/Logout.svg"
                             alt="Logout"></span>Login</a>
             </div>
@@ -35,78 +35,157 @@
     </div>
 
     <section class="checkout__form">
-        <div class="checkout__form-container container">
+        <div class="checkout__form-container-main container">
             <ul class="checkout__form-list" style="max-width: 883px;">
                 <li class="checkout__form-item">Billing Address</li>
                 <li class="checkout__form-item">Your Order</li>
             </ul>
+            <div class="checkout__form-container">
+                <form action="" class="checkout__form_main">
+                    <div class="checkout__form-main-input">
+                        <label for="name">First Name <span>*</span></label>
+                        <input required id="name" type="text">
+                    </div>
 
-            <form action="" class="checkout__form_main">
-                <div class="checkout__form-main-input">
-                    <label for="name">First Name <span>*</span></label>
-                    <input required id="name" type="text">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="last name">Last Name <span>*</span></label>
+                        <input required id="last name" type="text">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="last name">Last Name <span>*</span></label>
-                    <input required id="last name" type="text">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="countrySelect">Country / Region <span>*</span></label>
+                        <select name="country" id="countrySelect">
+                            <!-- Optionlar JavaScript orqali yaratiladi -->
+                        </select>
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="countrySelect">Country / Region <span>*</span></label>
-                    <select name="country" id="countrySelect">
-                        <!-- Optionlar JavaScript orqali yaratiladi -->
-                    </select>
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="TownCity">Town / City <span>*</span></label>
+                        <input required id="TownCity" type="text">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="TownCity">Town / City <span>*</span></label>
-                    <input required id="TownCity" type="text">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="Street Address">Street Address <span>*</span></label>
+                        <input required id="Street Address" type="text" placeholder="House number and street name">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="Street Address">Street Address <span>*</span></label>
-                    <input required id="Street Address" type="text" placeholder="House number and street name">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label style="color: transparent;" for="Appartment" class="Appartment">.</label>
+                        <input required id="Appartment" type="text"
+                            placeholder="Appartment, suite, unit, etc. (optional)">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label style="color: transparent;" for="Appartment" class="Appartment">.</label>
-                    <input required id="Appartment" type="text" placeholder="Appartment, suite, unit, etc. (optional)">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="StateSelect">State <span>*</span></label>
+                        <select name="state" id="StateSelect">
+                            <!-- Optionlar JavaScript orqali yaratiladi -->
+                        </select>
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="StateSelect">State <span>*</span></label>
-                    <select name="state" id="StateSelect">
-                        <!-- Optionlar JavaScript orqali yaratiladi -->
-                    </select>
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="Zip">Zip <span>*</span></label>
+                        <input required id="Zip" type="number">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="Zip">Zip <span>*</span></label>
-                    <input required id="Zip" type="number">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="email">Email address <span>*</span></label>
+                        <input required id="email" type="email">
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="email">Email address <span>*</span></label>
-                    <input required id="email" type="email">
-                </div>
+                    <div class="checkout__form-main-input">
+                        <label for="NumberSelect">Select a country:</label>
+                        <select name="country" id="NumberSelect">
+                            <!-- Optionlar JavaScript orqali yaratiladi -->
+                        </select>
+                    </div>
 
-                <div class="checkout__form-main-input">
-                    <label for="NumberSelect">Select a country:</label>
-                    <select name="country" id="NumberSelect">
-                        <!-- Optionlar JavaScript orqali yaratiladi -->
-                    </select>
-                </div>
+                    <div class="question-checkbox">
+                        <span class="checkbox "></span>
+                        <h4>Ship to a different address?</h4>
+                    </div>
+                    <div class="checkout__form-main-textarea">
+                        <p>Order notes (optional)</p>
+                        <textarea></textarea>
+                    </div>
+                </form>
 
-                <div  class="question-checkbox" >
-                    <span class="checkbox " ></span>
-                    <h4>Ship to a different address?</h4>
+                <div class="checkout__form-subtotal">
+                    <ul class="checkout__form-subtotal-list">
+                        <li>Products</li>
+                        <li>Subtotal</li>
+                    </ul>
+
+                    <div class="checkout__form-subtotal-main-div">
+                        <div class="checkout__form-subtotal-div">
+                            <img width="70px" height="70px" src="./img/shop/shop__cart/1.png" alt="">
+                            <div id="shop__cart-about-product">
+                                <h4>Barberton Daisy</h4>
+                                <p>SKU: <span>1995751877966</span></p>
+                            </div>
+                            <span class="checkout__form-subtotal-product">(x 2)</span>
+                            <h5 class="checkout__form-subtotal-price">$238.00</h5>
+                        </div>
+
+                        <div class="checkout__form-subtotal-div">
+                            <img width="70px" height="70px" src="./img/shop/shop__cart/2.png" alt="">
+                            <div id="shop__cart-about-product">
+                                <h4>Barberton Daisy</h4>
+                                <p>SKU: <span>1995751877966</span></p>
+                            </div>
+                            <span class="checkout__form-subtotal-product">(x 2)</span>
+                            <h5 class="checkout__form-subtotal-price">$238.00</h5>
+                        </div>
+
+                        <div class="checkout__form-subtotal-div">
+                            <img width="70px" height="70px" src="./img/shop/shop__cart/3.png" alt="">
+                            <div id="shop__cart-about-product">
+                                <h4>Barberton Daisy</h4>
+                                <p>SKU: <span>1995751877966</span></p>
+                            </div>
+                            <span class="checkout__form-subtotal-product">(x 2)</span>
+                            <h5 class="checkout__form-subtotal-price">$238.00</h5>
+                        </div>
+                    </div>
+                    <div class="checkout__form-subtotal-second">
+                        <p class="checkout__form-subtotal-heading">Have a coupon code? <a href="#"> Click here</a></p>
+                        <ul class="checkout__form-total-list">
+                            <li class="checkout__form-total-item">Subtotal<span
+                                    class="checkout__form-total-item-span">$2,683.00</span></li>
+                            <li class="checkout__form-total-item">Coupon Discount<span
+                                    class="checkout__form-total-item-span">(-) 00.00</span></li>
+                            <li class="checkout__form-total-item">Shiping<span
+                                    class="checkout__form-total-item-span">$16.00</span></li>
+                        </ul>
+                        <p class="checkout__form-total-heading">View shipping charge</p>
+                        <div class="checkout__form-total-money">
+                            <h4>Total</h4>
+                            <p>$2,699.00</p>
+                        </div>
+
+                        <div>
+                            <h4 class="checkbox__form-PaymentMethod" >Payment Method</h4>
+                            <div class="checkbox__form-PaymentMethod-cart" >
+                                <span class="checkbox__form-payment-choose" ></span>
+                                <img src="./img/shop/checkout/payments.png" alt="payments">
+                            </div>
+
+                            <div class="checkbox__form-PaymentMethod-cart" >
+                                <span class="checkbox__form-payment-choose" ></span>
+                                <p>Dorect bank transfer</p>
+                            </div>
+
+                            <div class="checkbox__form-PaymentMethod-cart" >
+                                <span class="checkbox__form-payment-choose active" ></span>
+                                <p>Cash on delivery</p>
+                            </div>
+
+                            <a class="checkbox__form-PaymentMethod-btn" href="#">Place Order</a>
+                        </div>
+
+
+                    </div>
                 </div>
-                <div class="checkout__form-main-textarea" >
-                    <p>Order notes (optional)</p>
-                    <textarea></textarea>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -133,7 +212,8 @@
             <form class="about__section-form">
                 <h3 class="about__section-form-title">Would you like to join newsletters?</h3>
                 <div class="about__section-form-input">
-                    <input required class="about__section-input" required type="email" placeholder="enter your email address...">
+                    <input required class="about__section-input" required type="email"
+                        placeholder="enter your email address...">
                     <button class="about__section-input-btn" type="submit">Join</button>
                 </div>
                 <p class="about__section-form-text">We usually post offers and challenges in newsletter. We’re your
@@ -274,46 +354,46 @@
         });
     </script>
 
-<script>
-    const state = [
-        "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
-        "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
-        "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
-        "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso",
-        "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic",
-        "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the",
-        "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus",
-        "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor",
-        "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
-        "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
-        "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
-        "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy",
-        "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South",
-        "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya",
-        "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
-        "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco",
-        "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal",
-        "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway",
-        "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
-        "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis",
-        "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
-        "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
-        "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka",
-        "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania",
-        "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan",
-        "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
-        "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
-    ];
+    <script>
+        const state = [
+            "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda",
+            "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
+            "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia",
+            "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso",
+            "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic",
+            "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the",
+            "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus",
+            "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor",
+            "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini",
+            "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana",
+            "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras",
+            "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy",
+            "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South",
+            "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya",
+            "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali",
+            "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Monaco",
+            "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal",
+            "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway",
+            "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru",
+            "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis",
+            "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe",
+            "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia",
+            "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Sudan", "Spain", "Sri Lanka",
+            "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania",
+            "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan",
+            "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States",
+            "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+        ];
 
-    const selectState = document.getElementById("StateSelect");
+        const selectState = document.getElementById("StateSelect");
 
-    state.forEach(function (country) {
-        const option = document.createElement("option");
-        option.value = country;
-        option.textContent = country;
-        selectState.appendChild(option);
-    });
-</script>
+        state.forEach(function (country) {
+            const option = document.createElement("option");
+            option.value = country;
+            option.textContent = country;
+            selectState.appendChild(option);
+        });
+    </script>
 
     <script>
         // JavaScript kodini shu yerga yozamiz

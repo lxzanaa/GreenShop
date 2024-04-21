@@ -169,3 +169,26 @@ let checkbox = document.querySelector(".checkbox");
 checkbox.addEventListener('click' , function(){
     checkbox.classList.toggle("check")
 })
+
+
+let checkbox__formPaymentChoose = document.querySelectorAll(".checkbox__form-payment-choose")
+
+checkbox__formPaymentChoose.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        checkbox__formPaymentChoose.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
+
+let checkbox__formPaymentMethodCart = document.querySelectorAll(".checkbox__form-PaymentMethod-cart")
+
+checkbox__formPaymentMethodCart.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        checkbox__formPaymentMethodCart.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})

@@ -1202,6 +1202,25 @@ body {
     margin-right: 98px;
 }
 
+.shop__cart-about-product h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+}
+
+.shop__cart-about-product p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a5a5a5;
+}
+
+.shop__cart-about-product p span {
+    color: #727272;
+}
+
 .shop__cart-main-price {
     margin-right: 92px;
 }
@@ -1405,9 +1424,13 @@ body {
     padding-bottom: 210px;
 }
 
-.checkout__form-container {
+.checkout__form-container-main {
     /* display: flex; */
-    /* justify-content: space-between; */
+}
+
+.checkout__form-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .checkout__form-list {
@@ -1429,7 +1452,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
 }
 
 .checkout__form-main-input label {
@@ -1442,9 +1465,10 @@ body {
 }
 
 .checkout__form_main {
+    width: 722px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 722px;
+    gap: 22px;
 }
 
 .checkout__form-main-input label span {
@@ -1547,4 +1571,221 @@ body {
     outline: none;
     padding: 10px;
     font-family: sans-serif;
+}
+
+.checkout__form-subtotal-list {
+    width: 405px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 0.30px solid #46a35880;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+}
+
+.checkout__form-subtotal-list li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+
+.checkout__form-subtotal-main-div {}
+
+.checkout__form-subtotal-div {
+    display: flex;
+    align-items: center;
+    background-color: #FBFBFB;
+    margin-bottom: 10px;
+}
+
+.checkout__form-subtotal-div:last-child {
+    margin-bottom: 17px;
+}
+
+.checkout__form-subtotal-div img {
+    margin-right: 11px;
+}
+
+.checkout__form-subtotal-product {
+    margin-right: 37px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #727272;
+}
+
+.checkout__form-subtotal-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #46a358;
+}
+
+#shop__cart-about-product {
+    margin-right: 42px;
+}
+
+#shop__cart-about-product h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 6px;
+}
+
+#shop__cart-about-product p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a5a5a5;
+}
+
+#shop__cart-about-product p span {
+    color: #727272;
+}
+
+/* .checkout__form-total-list {} */
+
+.checkout__form-total-item {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout__form-total-item:last-child {
+    margin-bottom: 8px;
+}
+
+.checkout__form-total-item-span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #3d3d3d;
+}
+
+.checkout__form-total-heading {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #46a358;
+    margin-bottom: 16px;
+    text-align: right;
+    border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
+    padding-bottom: 17px;
+}
+
+.checkout__form-total-money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 47px;
+}
+
+.shop_checkout__form_cart-total-money h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+
+.checkout__form-total-money p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #46a358;
+}
+
+.checkout__form-subtotal-second {
+    width: 321px;
+    margin-left: auto;
+}
+
+.checkout__form-subtotal-heading {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d3d3d;
+    text-align: right;
+    margin-bottom: 19px;
+}
+
+.checkout__form-subtotal-heading a {
+    font-weight: 500;
+    color: #46a358;
+    text-decoration: none;
+}
+
+.checkout__form-subtotal-heading a:hover {
+    text-decoration: underline;
+}
+
+.checkbox__form-PaymentMethod {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 19px;
+}
+
+.checkbox__form-PaymentMethod-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 11px 10px 8px 11px;
+    margin-bottom: 15px;
+}
+
+.checkbox__form-PaymentMethod-cart p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+
+.checkbox__form-PaymentMethod-cart:nth-child(4) {
+    margin-bottom: 49px;
+}
+
+/* .checkbox__form-PaymentMethod-cart{
+    border: 1px solid var(--main-color);
+} */
+
+.checkbox__form-payment-choose {
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checkbox__form-payment-choose.active {
+    background-color: var(--main-color);
+}
+
+.checkbox__form-PaymentMethod-btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #fff;
+    border-radius: 3px;
+    background: #46a358;
+    text-decoration: none;
 }
