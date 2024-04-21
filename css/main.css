@@ -1073,3 +1073,70 @@ body {
     line-height: 24px;
     color: #3d3d3d;
 }
+
+.section__ReletedProducts-container {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.section__ReletedProducts {
+    padding-top: 63px;
+    padding-bottom: 128px;
+}
+
+.section__ReletedProducts-img {
+    width: 219px;
+    margin-bottom: 12px;
+}
+
+.section__ReletedProducts-product-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+}
+
+.section__ReletedProducts-price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #46a358;
+}
+
+.section__ReletedProducts-title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #46a358;
+    padding-bottom: 12px;
+    border-bottom: 0.30px solid #46a35880;
+    margin-bottom: 44px;
+}
+
+.section__ReletedProducts-plants-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__ReletedProducts-pagination-list {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 585px;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.section__ReletedProducts-pagination-item {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.section__ReletedProducts-pagination-item.active {
+    background-color: var(--main-color);
+}
