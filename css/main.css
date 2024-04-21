@@ -1491,7 +1491,60 @@ body {
     height: 40px;
     text-transform: capitalize;
 }
-.Appartment::selection{
+
+.Appartment::selection {
     color: transparent;
     background-color: transparent;
+}
+
+.question-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 54px;
+}
+
+.question-checkbox h4 {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+}
+
+.question-checkbox .checkbox {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+
+}
+
+.question-checkbox .checkbox.check {
+    background-color: var(--main-color);
+}
+
+.checkout__form-main-textarea {
+    max-width: 350px;
+    display: grid;
+    grid-column: span 2;
+
+}
+
+.checkout__form-main-textarea p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+
+.checkout__form-main-textarea textarea {
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    max-width: 350px;
+    height: 152px;
+    outline: none;
+    padding: 10px;
+    font-family: sans-serif;
 }

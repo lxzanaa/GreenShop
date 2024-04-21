@@ -164,3 +164,8 @@ shop__cartDelete.forEach(function (item, index) {
     });
 });
 
+let checkbox = document.querySelector(".checkbox");
+
+checkbox.addEventListener('click' , function(){
+    checkbox.classList.toggle("check")
+})
