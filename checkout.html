@@ -29,147 +29,60 @@
         </div>
     </header>
 
-    <div class="home-to-shop-to-shoopingCart container">
-        <p><b>Home /</b> Shop / Shopping Cart </p>
+    <div class="home-to-shop-to-checkout container">
+        <p><b>Home /</b> Shop / Checkout </p>
     </div>
 
-    <section class="shopping__cart">
-        <div class="shopping__cart-container container">
-            <div class="shop__cart-container-main" >
-                <ul class="shop__cart-category-list">
-                    <li class="shop__cart-category-item" id="shop__cart-category-item-pruduct">Products</li>
-                    <li class="shop__cart-category-item" id="shop__cart-category-item-price">Price</li>
-                    <li class="shop__cart-category-item" id="shop__cart-category-item-quantity">Quantity</li>
-                    <li class="shop__cart-category-item" id="shop__cart-category-item-total">Total</li>
+    <section class="checkout__form" >
+        <div class="checkout__form-container container" >
+                <ul class="checkout__form-list" style="max-width: 883px;" >
+                    <li class="checkout__form-item" >Billing Address</li>
+                    <li class="checkout__form-item" >Your Order</li>
                 </ul>
-                <div class="shop__cart-category-cart-main" >
-                    <div class="shop__cart-category-cart">
-                        <img width="70px" height="70px" class="shop__cart-category-img" src="./img/shop/shop__cart/1.png" alt="flower">
-                        <div class="shop__cart-about-product">
-                            <h4>Barberton Daisy</h4>
-                            <p>SKU: <span>1995751877966</span></p>
-                        </div>
-                        <h4 class="shop__cart-main-price" >$119.00</h4>
-                        <div class="shop__section-info-counter-2">
-                            <button class="shop__section-button-minus2 count2">-</button>
-                            <span class="shop__section-number2">1</span>
-                            <button class="shop__section-button-plus2 count2">+</button>
-                        </div>
-                        <h4 class="shop__cart-total-price" >$238.00</h4>
-                        <img class="shop__cart-delete delete" src="./img/shop/shop__cart/Delete.svg">
+
+                <form  action="" class="checkout__form_main">
+                    <div class="checkout__form-main-input" >
+                        <label for="name">First Name <span>*</span></label>
+                        <input id="name" type="text">
                     </div>
 
-                    <div class="shop__cart-category-cart">
-                        <img width="70px" height="70px" class="shop__cart-category-img" src="./img/shop/shop__cart/1.png" alt="flower">
-                        <div class="shop__cart-about-product">
-                            <h4>Barberton Daisy</h4>
-                            <p>SKU: <span>1995751877966</span></p>
-                        </div>
-                        <h4 class="shop__cart-main-price" >$119.00</h4>
-                        <div class="shop__section-info-counter-2">
-                            <button class="shop__section-button-minus2 count2">-</button>
-                            <span class="shop__section-number2">1</span>
-                            <button class="shop__section-button-plus2 count2">+</button>
-                        </div>
-                        <h4 class="shop__cart-total-price" >$238.00</h4>
-                        <img class="shop__cart-delete delete" src="./img/shop/shop__cart/Delete.svg">
+                    <div class="checkout__form-main-input" >
+                        <label for="last name">Last Name <span>*</span></label>
+                        <input id="last name" type="text">
                     </div>
 
-                    <div class="shop__cart-category-cart">
-                        <img width="70px" height="70px" class="shop__cart-category-img" src="./img/shop/shop__cart/1.png" alt="flower">
-                        <div class="shop__cart-about-product">
-                            <h4>Barberton Daisy</h4>
-                            <p>SKU: <span>1995751877966</span></p>
-                        </div>
-                        <h4 class="shop__cart-main-price" >$119.00</h4>
-                        <div class="shop__section-info-counter-2">
-                            <button class="shop__section-button-minus2 count2">-</button>
-                            <span class="shop__section-number2">1</span>
-                            <button class="shop__section-button-plus2 count2">+</button>
-                        </div>
-                        <h4 class="shop__cart-total-price" >$238.00</h4>
-                        <img class="shop__cart-delete delete" src="./img/shop/shop__cart/Delete.svg">
+                    <div class="checkout__form-main-input" >
+                        <label for="name">First Name <span>*</span></label>
+                        <input id="name" type="text">
                     </div>
-                </div>
-                <div>
 
-                </div>
-            </div>
+                    <div class="checkout__form-main-input" >
+                        <label for="last name">Last Name <span>*</span></label>
+                        <input id="last name" type="text">
+                    </div>
 
+                    <div class="checkout__form-main-input" >
+                        <label for="name">First Name <span>*</span></label>
+                        <input id="name" type="text">
+                    </div>
 
-            <div class="shop__cart-total-container" >
-                <div class="shop__cart-total-title-div" >
-                    <h3 class="shop__cart-total-title" >Cart Totals</h3>
-                </div>
-                <h4 class="shop__cart-total-inp-title" >Coupon Apply</h4>
-                <div class="shop__cart-total-input-div" >
-                    <input class="shop__cart-total-input" type="text" placeholder="Enter coupon code here...">
-                    <button class="shop__cart-total-inp-btn" >Apply</button>
-                </div>
-                <ul class="shop__cart-total-list" >
-                    <li class="shop__cart-total-item" >Subtotal<span class="shop__cart-total-item-span" >$2,683.00</span></li>
-                    <li class="shop__cart-total-item" >Coupon Discount<span class="shop__cart-total-item-span" >(-) 00.00</span></li>
-                    <li class="shop__cart-total-item" >Shiping<span class="shop__cart-total-item-span" >$16.00</span></li>
-                </ul>
-                <p class="shop__cart-total-heading" >View shipping charge</p>
-                <div class="shop__cart-total-money" >
-                    <h4>Total</h4>
-                    <p>$2,699.00</p>
-                </div>
-                <a class="shop__cart-checkout-btn" href="checkout.html">Proceed To Checkout</a>
-                <a class="shop__cart-continue" href="index.html">Continue Shopping</a>
-            </div>
+                    <div class="checkout__form-main-input" >
+                        <label for="last name">Last Name <span>*</span></label>
+                        <input id="last name" type="text">
+                    </div>
 
+                    <div class="checkout__form-main-input" >
+                        <label for="name">First Name <span>*</span></label>
+                        <input id="name" type="text">
+                    </div>
+
+                    <div class="checkout__form-main-input" >
+                        <label for="last name">Last Name <span>*</span></label>
+                        <input id="last name" type="text">
+                    </div>
+                </form>
         </div>
     </section>
-
-
-    <section class="section__ReletedProducts">
-        <div class="section__ReletedProducts-container container">
-            <div>
-                <h3 class="section__ReletedProducts-title">Releted Products</h3>
-            </div>
-            <div class="section__ReletedProducts-plants-div">
-                <div class="section__plants-card">
-                    <a href="#"><img class="section__ReletedProducts-img" src="./img/shop/releted-products/1.png"
-                            alt="flower"></a>
-                    <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
-                    <p class="section__ReletedProducts-price">$129.00</p>
-                </div>
-                <div class="section__plants-card">
-                    <a href="#"><img class="section__ReletedProducts-img" src="./img/shop/releted-products/2.png"
-                            alt="flower"></a>
-                    <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
-                    <p class="section__ReletedProducts-price">$129.00</p>
-                </div>
-                <div class="section__plants-card">
-                    <a href="#"><img class="section__ReletedProducts-img" src="./img/shop/releted-products/3.png"
-                            alt="flower"></a>
-                    <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
-                    <p class="section__ReletedProducts-price">$129.00</p>
-                </div>
-                <div class="section__plants-card">
-                    <a href="#"><img class="section__ReletedProducts-img" src="./img/shop/releted-products/4.png"
-                            alt="flower"></a>
-                    <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
-                    <p class="section__ReletedProducts-price">$129.00</p>
-                </div>
-                <div class="section__plants-card">
-                    <a href="#"><img class="section__ReletedProducts-img" src="./img/shop/releted-products/5.png"
-                            alt="flower"></a>
-                    <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
-                    <p class="section__ReletedProducts-price">$129.00</p>
-                </div>
-            </div>
-            <ul class="section__ReletedProducts-pagination-list">
-                <li class="section__ReletedProducts-pagination-item"></li>
-                <li class="section__ReletedProducts-pagination-item active"></li>
-                <li class="section__ReletedProducts-pagination-item"></li>
-            </ul>
-
-        </div>
-    </section>
-
 
     <section class="about__section">
         <div class="about__section-container container">
