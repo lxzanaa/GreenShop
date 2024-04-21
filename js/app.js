@@ -105,3 +105,14 @@ btnPlus.addEventListener('click', function () {
         spanInput.textContent = 1 * spanInput.textContent + 1
     }
 })
+
+let sectionAboutProductItem = document.querySelectorAll(".section__about-product-item")
+
+sectionAboutProductItem.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        sectionAboutProductItem.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})

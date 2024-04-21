@@ -1031,3 +1031,45 @@ body {
     align-items: center;
     gap: 16px;
 }
+
+.section__about-product {
+    padding-top: 46px;
+    padding-bottom: 63px;
+}
+
+.section__about-product-container {}
+
+.section__about-product-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 0.3px solid #46A35880;
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.section__about-product-item {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+    color: #3d3d3d;
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+
+.section__about-product-item.active {
+    border-bottom: 3px solid #46a358;
+    font-weight: 700;
+    color: #46a358;
+}
+
+.section__about-product-description-text {
+    margin-bottom: 18px;
+}
+
+.section__about-product-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3d3d3d;
+}
