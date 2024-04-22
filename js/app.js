@@ -1,3 +1,73 @@
+window.onload = function () {
+    slideMin();
+    slideMax();
+}
+
+const minVal = document.querySelector(".min-val");
+const maxVal = document.querySelector(".max-val");
+const priceInputMin = document.querySelector(".min-input");
+const priceInputMax = document.querySelector(".max-input");
+const minTooltip = document.querySelector(".min-tooltip");
+const maxTooltip = document.querySelector(".max-tooltip");
+const minGap = 0;
+const range = document.querySelector(".slider-track");
+
+const sliderMinValue = parseInt(minVal.min);
+const sliderMaxValue = parseInt(maxVal.max);
+
+function slideMin() {
+    let gap = parseInt(maxVal.value) - parseInt(minVal.value);
+    if (gap <= minGap) {
+        minVal.value = parseInt(maxVal.value) - minGap;
+    }
+    minTooltip.innerHTML = "$" + minVal.value;
+    priceInputMin.value = minVal.value;
+    setArea();
+}
+
+function slideMax() {
+    let gap = parseInt(maxVal.value) - parseInt(minVal.value);
+    if (gap <= minGap) {
+        maxVal.value = parseInt(minVal.value) + minGap;
+    }
+    maxTooltip.innerHTML = "$" + maxVal.value;
+    priceInputMax.value = maxVal.value;
+    setArea();
+}
+
+function setArea() {
+    let minValue = parseInt(minVal.value);
+    let maxValue = parseInt(maxVal.value);
+    let rangeWidth = sliderMaxValue - sliderMinValue;
+    let leftPercent = ((minValue - sliderMinValue) / rangeWidth) * 100;
+    let rightPercent = ((sliderMaxValue - maxValue) / rangeWidth) * 100;
+
+    range.style.left = leftPercent + "%";
+    range.style.right = rightPercent + "%";
+    minTooltip.style.left = leftPercent + "%";
+    maxTooltip.style.right = rightPercent + "%";
+}
+
+function setMinInput() {
+    let minPrice = parseInt(priceInputMin.value);
+    if (minPrice < sliderMinValue) {
+        priceInputMin.value = sliderMinValue;
+    }
+    minVal.value = priceInputMin.value;
+    slideMin();
+}
+
+function setMaxInput() {
+    let maxPrice = parseInt(priceInputMax.value);
+    if (maxPrice > sliderMaxValue) {
+        priceInputMax.value = sliderMaxValue;
+    }
+    maxVal.value = priceInputMax.value;
+    slideMax();
+}
+
+
+
 let headerContainerLink = document.querySelectorAll(".header__container-link")
 
 headerContainerLink.forEach(function (item, index) {
@@ -85,8 +155,8 @@ shopSectionSizeItem.forEach(function (item, index) {
     })
 })
 
-let btnMinus = document.querySelector(".shop__section-button-minus");
-let btnPlus = document.querySelector(".shop__section-button-plus");
+let btnMinus = document.querySelector(".shop__section-button-minus2");
+let btnPlus = document.querySelector(".shop__section-button-plus2");
 let spanInput = document.querySelector(".shop__section-number");
 
 btnMinus.addEventListener('click', function () {
@@ -200,3 +270,47 @@ checkbox__formPaymentMethodBtn.addEventListener('click', function () {
     checkout__popup.classList.toggle("active")
     
 })
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     const priceRange = document.getElementById("price-range");
+//     const priceOutput = document.getElementById("price-output");
+//     const products = document.querySelectorAll(".product");
+
+//     // Initial price range output
+//     // priceOutput.textContent = "$" + priceRange.value;
+
+//     // Update price range output on input change
+//     priceRange.addEventListener("input", function() {
+//         priceOutput.textContent = "$" + this.value;
+//         filterProductsByPrice(this.value);
+//     });
+
+//     // Function to filter products based on price
+//     function filterProductsByPrice(maxPrice) {
+//         products.forEach(function(product) {
+//             const productPrice = parseInt(product.dataset.price);
+//             if (productPrice <= maxPrice) {
+//                 product.style.display = "block";
+//             } else {
+//                 product.style.display = "none";
+//             }
+//         });
+//     }
+// });
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
