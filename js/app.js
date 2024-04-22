@@ -166,7 +166,7 @@ shop__cartDelete.forEach(function (item, index) {
 
 let checkbox = document.querySelector(".checkbox");
 
-checkbox.addEventListener('click' , function(){
+checkbox.addEventListener('click', function () {
     checkbox.classList.toggle("check")
 })
 
@@ -191,4 +191,12 @@ checkbox__formPaymentMethodCart.forEach(function (item, index) {
         })
         item.classList.add("active");
     })
+})
+
+let checkbox__formPaymentMethodBtn = document.querySelector(".checkbox__form-PaymentMethod-btn")
+let checkout__popup = document.querySelector(".checkout__popup")
+
+checkbox__formPaymentMethodBtn.addEventListener('click', function () {
+    checkout__popup.classList.toggle("active")
+    
 })
