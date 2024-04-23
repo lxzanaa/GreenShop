@@ -1533,7 +1533,9 @@ body {
     text-transform: capitalize;
     outline: none;
 }
-
+textarea{
+    resize: none;
+}
 #countrySelect {
     outline: none;
     max-width: 350px;

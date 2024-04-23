@@ -35,13 +35,13 @@
     </div>
 
     <section class="checkout__form">
-        <div class="checkout__form-container-main container">
+        <form class="checkout__form-container-main container">
             <ul class="checkout__form-list" style="max-width: 883px;">
                 <li class="checkout__form-item">Billing Address</li>
                 <li class="checkout__form-item">Your Order</li>
             </ul>
             <div class="checkout__form-container">
-                <form action="" class="checkout__form_main">
+                <div  class="checkout__form_main">
                     <div class="checkout__form-main-input">
                         <label for="name">First Name <span>*</span></label>
                         <input required id="name" type="text">
@@ -84,7 +84,7 @@
 
                     <div class="checkout__form-main-input">
                         <label for="Zip">Zip <span>*</span></label>
-                        <input required id="Zip" type="number">
+                        <input required id="Zip" type="text">
                     </div>
 
                     <div class="checkout__form-main-input">
@@ -107,7 +107,7 @@
                         <p>Order notes (optional)</p>
                         <textarea></textarea>
                     </div>
-                </form>
+                </div>
 
                 <div class="checkout__form-subtotal">
                     <ul class="checkout__form-subtotal-list">
@@ -195,7 +195,7 @@
             <div class="">
 
             </div>
-        </div>
+        </form>
     </section>
 
     <section class="about__section">
@@ -221,8 +221,7 @@
             <form class="about__section-form">
                 <h3 class="about__section-form-title">Would you like to join newsletters?</h3>
                 <div class="about__section-form-input">
-                    <input required class="about__section-input" required type="email"
-                        placeholder="enter your email address...">
+                    <input class="about__section-input" required type="email" placeholder="enter your email address...">
                     <button class="about__section-input-btn" type="submit">Join</button>
                 </div>
                 <p class="about__section-form-text">We usually post offers and challenges in newsletter. We’re your
@@ -232,11 +231,11 @@
             </form>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="footer__container container">
+    
+    <section>
+        <div class="container">
             <div class="footer__container-contact">
-                <a href="#"><img class="footer__logo" src="./img/footer/contact/greenshop.svg" alt="logo"></a>
+                <a href="shop.html"><img class="footer__logo" src="./img/footer/contact/greenshop.svg" alt="logo"></a>
                 <ul class="footer__container-contact-list">
                     <li class="footer__container-contact-item"><span><img src="./img/footer/contact/Location.svg"
                                 alt=""></span><a class="footer__container-contact-link" href="#">70 West Buckingham Ave.
@@ -249,6 +248,12 @@
                             01911 717 490</a></li>
                 </ul>
             </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container container">
+
             <div class="footer__main">
                 <div class="footer__main-card">
                     <h3 class="footer__main-title">My Account</h3>
@@ -316,7 +321,7 @@
                     </div>
                 </div>
             </div>
-            <a class="footer__greenshop" href="#">© 2021 GreenShop. All Rights Reserved.</a>
+            <p class="footer__greenshop">© 2021 GreenShop. All Rights Reserved.</p>
         </div>
     </footer>
 
