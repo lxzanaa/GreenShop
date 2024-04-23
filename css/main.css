@@ -134,6 +134,17 @@ body {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 20px;
+    /* background-color: red; */
+    /* padding-top: 68px;
+    padding-bottom: 85px;*/
+} 
+
+.hero__img {
+    /* position: absolute; 
+    top: -50px;
+    right: -35px; */
+    width: 518px;
+    height: 518px;
 }
 
 .hero__heading {
@@ -182,10 +193,6 @@ body {
     text-decoration: none;
 }
 
-.hero__img {
-    width: 518px;
-    height: 518px;
-}
 
 .hero__pagination-list {
     position: absolute;

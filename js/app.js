@@ -66,8 +66,6 @@ function setMaxInput() {
     slideMax();
 }
 
-
-
 let headerContainerLink = document.querySelectorAll(".header__container-link")
 
 headerContainerLink.forEach(function (item, index) {
