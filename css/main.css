@@ -639,16 +639,22 @@ body {
 }
 
 .about__section-container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fbfbfb;
+    /* gap: 5px; */
+    padding: 25px;
+    background-color: #FBFBFB;
 }
 
 .about__section-info {
-    padding: 0 34px 0 23px;
+    padding-right: 34px;
     border-right: 1px solid #46A3581A;
     /* background-color: red; */
 }
