@@ -9,6 +9,9 @@ const priceInputMin = document.querySelector(".min-input");
 const priceInputMax = document.querySelector(".max-input");
 const minTooltip = document.querySelector(".min-tooltip");
 const maxTooltip = document.querySelector(".max-tooltip");
+const min__price = document.querySelector(".min__price");
+const max__price = document.querySelector(".max__price");
+
 const minGap = 0;
 const range = document.querySelector(".slider-track");
 
@@ -21,7 +24,7 @@ function slideMin() {
         minVal.value = parseInt(maxVal.value) - minGap;
     }
     minTooltip.innerHTML = "$" + minVal.value;
-    priceInputMin.value = minVal.value;
+    min__price.innerHTML = "$" + minVal.value;
     setArea();
 }
 
@@ -31,7 +34,7 @@ function slideMax() {
         maxVal.value = parseInt(minVal.value) + minGap;
     }
     maxTooltip.innerHTML = "$" + maxVal.value;
-    priceInputMax.value = maxVal.value;
+    max__price.innerHTML = "$" + maxVal.value;
     setArea();
 }
 

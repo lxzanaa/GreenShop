@@ -72,6 +72,11 @@ body {
     padding-bottom: 25px;
 }
 
+.header__container-link:hover {
+    color: var(--main-color);
+    transition: 0.2s;
+}
+
 .header__container-link.active {
     border-bottom: 3px solid transparent;
     border-color: var(--main-color);
@@ -380,6 +385,15 @@ body {
 
 .section__plants-card {
     position: relative;
+    border-top: 1px solid transparent;
+    /* border: 1px solid red; */
+}
+
+.shop__plants-cartt {
+    position: relative;
+    /* border: 3px solid blue; */
+    display: flex;
+    overflow: hidden;
 }
 
 .section__plants-sale {
@@ -396,28 +410,39 @@ body {
 }
 
 .section__plants-card:hover {
-    /* background-color: red; */
-    transition: 0.2s;
     border-top: 1px solid var(--main-color);
 
-    .img__hover {
+}
+
+.section__plants-card:hover .img__hover {
+    /* background-color: red; */
+    transition: 0.2s;
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    right: 64px;
+    display: flex;
+    gap: 10px;
+    /* .img__hover {
         display: flex;
         align-items: center;
         transition: all 0.2s;
-    }
+    } */
 }
 
 .img__hover {
     position: absolute;
-    bottom: 65px;
+    bottom: -65px;
     z-index: 1;
     right: 64px;
-    display: none;
+    transition: 0.2s;
+    display: flex;
     gap: 10px;
 }
 
 .section__plants-card2 {
     position: relative;
+    border-top: 1px solid transparent;
 }
 
 .section__plants-card2:hover {
@@ -442,14 +467,14 @@ body {
     gap: 10px;
 }
 
-.img__hover {
+/* .img__hover {
     position: absolute;
     bottom: 65px;
     z-index: 1;
     right: 64px;
     display: none;
     gap: 10px;
-}
+} */
 
 .hover__img-div {
     padding: 8px;
@@ -619,13 +644,15 @@ body {
 }
 
 .blog__section-cards {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 43px;
 }
 
 .blog__section-card {
-    max-width: 268px;
+    /* max-width: 268px; */
+    width: 100%;
     background-color: #FBFBFB;
 }
 
@@ -635,6 +662,7 @@ body {
 
 .blog__section-card-img {
     margin-bottom: 8.83px;
+    width: 100% !important;
 }
 
 .blog__section-card-heading {
@@ -646,7 +674,8 @@ body {
 }
 
 .blog__section-card-title {
-    width: 189px;
+    /* max-width: 189px; */
+    /* width: 100%; */
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -775,11 +804,15 @@ body {
     margin-right: 87px;
 }
 
+.footer__container-first {
+    padding: 28px 23px;
+    background-color: #46A3581A;
+}
+
 .footer__container-contact {
     display: flex;
     align-items: center;
-    padding: 28px 23px;
-    background-color: #46A3581A;
+
 }
 
 .footer__container-contact-list {
@@ -808,12 +841,15 @@ body {
     display: flex;
 }
 
+.footer__container-main {
+    background-color: #FBFBFB;
+}
+
 .footer__main {
     display: flex;
-    gap: 150px;
     padding: 33px 0 27px 23px;
+    gap: 150px;
     margin-bottom: 7px;
-    background-color: #FBFBFB;
     border-bottom: 1px solid #46a35833;
 }
 
@@ -2016,7 +2052,7 @@ textarea {
 
 
 .double__slider-box {
-    background-color: #fff;
+    background-color: #FBFBFB;
     padding: 20px 40px;
     border-radius: 10px;
     max-width: 20rem;
@@ -2159,4 +2195,42 @@ input[type="range"]::-moz-range-thumb {
 
 .input-field:focus {
     outline: none;
+}
+
+.header__responsive-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: baseline;
+
+}
+
+.header__responsive-filter {
+    display: none;
+}
+
+
+@media (max-width: 910px) {
+    .header__container-list {
+        display: none;
+    }
+}
+
+
+@media (max-width: 610px) {
+    .header__container-login {
+        display: none;
+    }
+    .header__container-logo{
+        display: none;
+    }
+
+    .header__responsive-filter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        
+    }
 }
