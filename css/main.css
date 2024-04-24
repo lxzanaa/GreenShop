@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url(./fonts/CeraPro-Medium.ttf);
+}
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    /* font-family: 'Cera Pro'; */
     font-family: sans-serif;
 }
 
 img {
-    /* display: flex; */
+    display: flex;
 }
 
 html {
@@ -385,7 +390,7 @@ body {
 
 .section__plants-card {
     position: relative;
-    border-top: 1px solid transparent;
+    border-top: 1px solid #fff;
     /* border: 1px solid red; */
 }
 
@@ -442,7 +447,7 @@ body {
 
 .section__plants-card2 {
     position: relative;
-    border-top: 1px solid transparent;
+    border-top: 1px solid #fff;
 }
 
 .section__plants-card2:hover {
@@ -718,9 +723,13 @@ body {
 }
 
 .about__section-info {
+    padding-left: 27px;
     padding-right: 34px;
     border-right: 1px solid #46A3581A;
     /* background-color: red; */
+}
+.about__section-info:first-child{
+    padding-left: 0;
 }
 
 .about__section-info img {
@@ -885,11 +894,12 @@ body {
 
 .footer__main-social-list {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 10px;
 }
 
-.footer__main-social-item {
+.footer__main-social-link {
     display: flex;
     border: 1px solid #46A35833;
     width: 30px;
@@ -898,27 +908,12 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background-color: #fff;
-}
-
-.footer__main-social-item svg {
-    display: flex;
     color: #46A35899;
-
+    transition: 0.2s;
 }
-
-.footer__main-social-item:hover {
+.footer__main-social-link:hover{
     background-color: #46A35899;
-    color: #fff;
-}
-
-.footer__main-social-item svg path:hover {
-    .footer__main-social-item {
-        background-color: #fff;
-    }
-
-    color: #fff;
-    transition: all 0.2s;
+    color: white;
 }
 
 .footer__main-social-title {
@@ -2198,12 +2193,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .header__responsive-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: baseline;
-
+    display: none;
 }
 
 .header__responsive-filter {
@@ -2227,10 +2217,9 @@ input[type="range"]::-moz-range-thumb {
     }
 
     .header__responsive-filter {
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         padding: 12px;
-        
     }
 }

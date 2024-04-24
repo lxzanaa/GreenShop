@@ -148,6 +148,7 @@ shop__cartDelete.forEach(function (item, index) {
 let btnMinusCount = document.querySelector(".shop__section-button-minusCount");
 let btnPlusCount = document.querySelector(".shop__section-button-plusCount");
 let spanInput = document.querySelector(".shop__section-number");
+let shop__sectionTitlePrice = document.querySelector('.shop__section-about-flower-title-price')
 
 btnMinusCount.addEventListener('click', function () {
     let currentValue = parseInt(spanInput.textContent);
@@ -163,7 +164,7 @@ btnPlusCount.addEventListener('click', function () {
     let currentValue = parseInt(spanInput.textContent);
 
     if (currentValue < 20) {
-        spanInput.textContent = currentValue + 1;
+        spanInput.textContent = currentValue + 1 ;
     } else {
         spanInput.textContent = 20;
     }
