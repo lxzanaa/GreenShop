@@ -122,6 +122,8 @@ sectionAsideBtns.forEach(function (item, index) {
     })
 })
 
+
+
 let product = document.querySelectorAll('.shop__section-product')
 let mainImg = document.querySelector('.shop__section-main-image')
 
@@ -152,42 +154,6 @@ shopSectionSizeItem.forEach(function (item, index) {
         item.classList.add("active");
     })
 })
-
-let btnMinus = document.querySelector(".shop__section-button-minus2");
-let btnPlus = document.querySelector(".shop__section-button-plus2");
-let spanInput = document.querySelector(".shop__section-number");
-
-btnMinus.addEventListener('click', function () {
-    let currentValue = parseInt(spanInput.textContent);
-
-    if (currentValue > 1) {
-        spanInput.textContent = currentValue - 1;
-    } else {
-        spanInput.textContent = 1;
-    }
-});
-
-btnPlus.addEventListener('click', function () {
-    let currentValue = parseInt(spanInput.textContent);
-
-    if (currentValue < 20) {
-        spanInput.textContent = currentValue + 1;
-    } else {
-        spanInput.textContent = 20;
-    }
-});
-
-
-let sectionAboutProductItem = document.querySelectorAll(".section__about-product-item");
-
-sectionAboutProductItem.forEach(function (item) {
-    item.addEventListener('click', function (event) {
-        sectionAboutProductItem.forEach(function (element) {
-            element.classList.remove("active");
-        });
-        item.classList.add("active");
-    });
-});
 
 
 let shopSectionButtonMinus2 = document.querySelectorAll(".shop__section-button-minus2");
@@ -220,6 +186,21 @@ shopSectionButtonPlus2.forEach(function (item, index) {
     });
 });
 
+
+
+
+let sectionAboutProductItem = document.querySelectorAll(".section__about-product-item");
+
+sectionAboutProductItem.forEach(function (item) {
+    item.addEventListener('click', function (event) {
+        sectionAboutProductItem.forEach(function (element) {
+            element.classList.remove("active");
+        });
+        item.classList.add("active");
+    });
+});
+
+
 let shop__cartCategoryCart = document.querySelectorAll(".shop__cart-category-cart");
 let shop__cartDelete = document.querySelectorAll(".shop__cart-delete");
 
@@ -230,6 +211,30 @@ shop__cartDelete.forEach(function (item, index) {
             shop__cartCategoryCart[index].remove();
         } else { }
     });
+});
+
+let btnMinusCount = document.querySelector(".shop__section-button-minusCount");
+let btnPlusCount = document.querySelector(".shop__section-button-plusCount");
+let spanInput = document.querySelector(".shop__section-number");
+
+btnMinusCount.addEventListener('click', function () {
+    let currentValue = parseInt(spanInput.textContent);
+
+    if (currentValue > 1) {
+        spanInput.textContent = currentValue - 1;
+    } else {
+        spanInput.textContent = 1;
+    }
+});
+
+btnPlusCount.addEventListener('click', function () {
+    let currentValue = parseInt(spanInput.textContent);
+
+    if (currentValue < 20) {
+        spanInput.textContent = currentValue + 1;
+    } else {
+        spanInput.textContent = 20;
+    }
 });
 
 let checkbox = document.querySelector(".checkbox");
@@ -268,6 +273,7 @@ checkbox__formPaymentMethodBtn.addEventListener('click', function () {
     checkout__popup.classList.toggle("active")
     
 })
+
 
 
 

@@ -30,8 +30,11 @@
         </div>
     </header>
 
-    <div class="home-to-shop-to-checkout container">
-        <p><b>Home /</b> Shop / Checkout </p>
+
+    <div class="home-to-shop-to-shoopingCart container">
+        <a class="home-to-home" href="index.html">Home / </a>
+        <a class="home-to-shop-btn" href="shop.html"> Shop</a>
+        <a class="home-to-shop-btn" href="cart.html"> / Checkout</a>
     </div>
 
     <section class="checkout__form">
@@ -41,7 +44,7 @@
                 <li class="checkout__form-item">Your Order</li>
             </ul>
             <div class="checkout__form-container">
-                <div  class="checkout__form_main">
+                <div class="checkout__form_main">
                     <div class="checkout__form-main-input">
                         <label for="name">First Name <span>*</span></label>
                         <input required id="name" type="text">
@@ -100,7 +103,7 @@
                     </div>
 
                     <div class="question-checkbox">
-                        <span class="checkbox "></span>
+                        <input class="checkbox" type="checkbox" name="" id="">
                         <h4>Ship to a different address?</h4>
                     </div>
                     <div class="checkout__form-main-textarea">
@@ -165,17 +168,17 @@
                         <div>
                             <h4 class="checkbox__form-PaymentMethod">Payment Method</h4>
                             <div class="checkbox__form-PaymentMethod-cart">
-                                <span class="checkbox__form-payment-choose"></span>
+                                <input name="name" type="radio" class="checkbox__form-payment-choose">
                                 <img src="./img/shop/checkout/payments.png" alt="payments">
                             </div>
 
                             <div class="checkbox__form-PaymentMethod-cart">
-                                <span class="checkbox__form-payment-choose"></span>
+                                <input name="name" type="radio" class="checkbox__form-payment-choose">
                                 <p>Dorect bank transfer</p>
                             </div>
 
                             <div class="checkbox__form-PaymentMethod-cart">
-                                <span class="checkbox__form-payment-choose active"></span>
+                                <input name="name" type="radio" class="checkbox__form-payment-choose">
                                 <p>Cash on delivery</p>
                             </div>
 
@@ -231,7 +234,7 @@
             </form>
         </div>
     </section>
-    
+
     <section>
         <div class="container">
             <div class="footer__container-contact">
