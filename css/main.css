@@ -2863,7 +2863,7 @@ input[type="range"]::-moz-range-thumb {
 
     .section__aside-item {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
         color: #3d3d3d;
         padding-bottom: 5px;
@@ -2871,7 +2871,7 @@ input[type="range"]::-moz-range-thumb {
 
     .section__aside-item.active {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 16px;
     }
 
