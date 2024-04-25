@@ -13,11 +13,11 @@
 
     <header class="header">
         <div class="header__container container">
-            <a href="index.html"><img src="./img/header/greenshop.svg" alt="greenshop-logo"></a>
+            <a href="index.html"><img class="header__container-logo" src="./img/header/greenshop.svg"
+                    alt="greenshop-logo"></a>
             <ul class="header__container-list">
-                <li class="header__container-item"><a class="header__container-link" href="index.html">Home</a></li>
-                <li class="header__container-item"><a class="header__container-link" href="shop.html">Shop</a>
-                </li>
+                <li class="header__container-item"><a class="header__container-link " href="index.html">Home</a></li>
+                <li class="header__container-item"><a class="header__container-link" href="shop.html">Shop</a></li>
                 <li class="header__container-item"><a class="header__container-link" href="#">Plant Care</a></li>
                 <li class="header__container-item"><a class="header__container-link" href="#">Blogs</a></li>
             </ul>
@@ -27,9 +27,25 @@
                 <a class="header__container-loginBtn btn" href="#"><span><img src="./img/header/Logout.svg"
                             alt="Logout"></span>Login</a>
             </div>
-        </div>
-    </header>
 
+            <div class="header__responsive-container">
+                <form style="display: flex;align-items: center;">
+                    <button name="search" style="cursor: pointer;" class="btn-search">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.5296 3.2436C6.50469 3.2436 3.24326 6.50244 3.24326 10.5207C3.24326 14.539 6.50469 17.7978 10.5296 17.7978C12.5376 17.7978 14.3546 16.9875 15.6732 15.675C16.9977 14.3566 17.8159 12.5347 17.8159 10.5207C17.8159 6.50244 14.5545 3.2436 10.5296 3.2436ZM1.83301 10.5207C1.83301 5.72204 5.72737 1.83334 10.5296 1.83334C15.3318 1.83334 19.2262 5.72204 19.2262 10.5207C19.2262 12.6706 18.4436 14.6389 17.149 16.1554L19.9595 18.9627C20.2351 19.2379 20.2353 19.6843 19.9601 19.9599C19.6849 20.2354 19.2384 20.2356 18.9629 19.9604L16.1497 17.1505C14.6343 18.4335 12.6719 19.2081 10.5296 19.2081C5.72737 19.2081 1.83301 15.3194 1.83301 10.5207Z"
+                                fill="#A5A5A5" />
+                        </svg>
+                    </button>
+                    <input required id="search" style="width: 100%;" type="text" placeholder="Find your plants">
+                </form>
+
+                <button class="button-filter"><img style="display: flex;" class="header__responsive-filter"
+                        src="./img/header/Filter.svg" alt="Filter"></button>
+            </div>
+        </div>
+
+    </header>
 
     <div class="home-to-shop-to-shoopingCart container">
         <a class="home-to-home" href="index.html">Home / </a>
@@ -210,19 +226,19 @@
                     trendy plants.</p>
             </div>
 
-             <div class="about__section-info">
+            <div class="about__section-info" id="about__section-info_border">
                 <img style="display: flex;" width="77px" height="95px" src="./img/about-section/2.svg" alt="flower">
                 <h4 class="about__section-info-title">Plant Renovation</h4>
                 <p class="about__section-info-text">We are an online plant shop offering a wide range of cheap and
                     trendy plants.</p>
             </div>
 
-            <div class="about__section-info border-none">
+            <div class="about__section-info border-none" id="about__section-info_border-r">
                 <img style="display: flex;" width="77px" height="95px" src="./img/about-section/3.svg" alt="flower">
                 <h4 class="about__section-info-title">Watering Graden</h4>
                 <p class="about__section-info-text">We are an online plant shop offering a wide range of cheap and
                     trendy plants.</p>
-            </div> 
+            </div>
 
             <form class="about__section-form">
                 <h3 class="about__section-form-title">Would you like to join newsletters?</h3>
@@ -241,8 +257,9 @@
     <section>
         <div class="footer__container-first container">
             <div class="footer__container-contact">
-                <a href="shop.html"><img class="footer__logo" src="./img/footer/contact/greenshop.svg" alt="logo"></a>
                 <ul class="footer__container-contact-list">
+                    <a href="shop.html"><img class="footer__logo" src="./img/footer/contact/greenshop.svg"
+                            alt="logo"></a>
                     <li class="footer__container-contact-item"><span><img src="./img/footer/contact/Location.svg"
                                 alt=""></span><a class="footer__container-contact-link" href="#">70 West Buckingham Ave.
                             <br> Farmingdale, NY 11735</a></li>
@@ -294,75 +311,70 @@
                 <div>
                     <div class="footer__main-social">
                         <h3 class="footer__main-social-title">Social Media</h3>
-                        <ul class="footer__main-social-list">
-                            <li class="footer__main-social-item"><a class="footer__main-social-link" target="_blank"
-                                    href="https://www.facebook.com/">
-                                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2 5.33333H0V8H2V16H5.33333V8H7.73333L8 5.33333H5.33333V4.2C5.33333 3.6 5.46667 3.33333 6.06667 3.33333H8V0H5.46667C3.06667 0 2 1.06667 2 3.06667V5.33333Z"
-                                            fill="currentColor" fill-opacity="0.6" />
-                                    </svg>
+                        <div class="footer__main-social-list">
+                            <a class="footer__main-social-link" target="_blank" href="https://www.facebook.com/">
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 5.33333H0V8H2V16H5.33333V8H7.73333L8 5.33333H5.33333V4.2C5.33333 3.6 5.46667 3.33333 6.06667 3.33333H8V0H5.46667C3.06667 0 2 1.06667 2 3.06667V5.33333Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
 
-                                </a>
-                            </li>
-                            <li class="footer__main-social-item"><a class="footer__main-social-link" target="_blank"
-                                    href="https://www.instagram.com/">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M8 1.46667C10.1333 1.46667 10.4 1.46667 11.2667 1.53333C13.4667 1.6 14.4667 2.66667 14.5333 4.8C14.6 5.66667 14.6 5.86667 14.6 8C14.6 10.1333 14.6 10.4 14.5333 11.2C14.4667 13.3333 13.4 14.4 11.2667 14.4667C10.4 14.5333 10.2 14.5333 8 14.5333C5.86667 14.5333 5.6 14.5333 4.8 14.4667C2.6 14.4 1.6 13.3333 1.53333 11.2C1.46667 10.3333 1.46667 10.1333 1.46667 8C1.46667 5.86667 1.46667 5.6 1.53333 4.8C1.6 2.66667 2.66667 1.6 4.8 1.53333C5.6 1.46667 5.86667 1.46667 8 1.46667ZM8 0C5.8 0 5.53333 0 4.73333 0.0666667C1.8 0.2 0.2 1.8 0.0666667 4.73333C0 5.53333 0 5.8 0 8C0 10.2 0 10.4667 0.0666667 11.2667C0.2 14.2 1.8 15.8 4.73333 15.9333C5.53333 16 5.8 16 8 16C10.2 16 10.4667 16 11.2667 15.9333C14.2 15.8 15.8 14.2 15.9333 11.2667C16 10.4667 16 10.2 16 8C16 5.8 16 5.53333 15.9333 4.73333C15.8 1.8 14.2 0.2 11.2667 0.0666667C10.4667 0 10.2 0 8 0ZM8 3.86667C5.73333 3.86667 3.86667 5.73333 3.86667 8C3.86667 10.2667 5.73333 12.1333 8 12.1333C10.2667 12.1333 12.1333 10.2667 12.1333 8C12.1333 5.73333 10.2667 3.86667 8 3.86667ZM8 10.6667C6.53333 10.6667 5.33333 9.46667 5.33333 8C5.33333 6.53333 6.53333 5.33333 8 5.33333C9.46667 5.33333 10.6667 6.53333 10.6667 8C10.6667 9.46667 9.46667 10.6667 8 10.6667ZM12.2667 2.8C11.7333 2.8 11.3333 3.2 11.3333 3.73333C11.3333 4.26667 11.7333 4.66667 12.2667 4.66667C12.8 4.66667 13.2 4.26667 13.2 3.73333C13.2 3.2 12.8 2.8 12.2667 2.8Z"
-                                            fill="currentColor" fill-opacity="0.6" />
-                                    </svg>
+                            </a>
 
-                                </a>
-                            </li>
-                            <li class="footer__main-social-item"><a class="footer__main-social-link" target="_blank"
-                                    href="https://www.twitter.com/">
-                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.03186 13.0036C11.0699 13.0036 14.3718 8.00118 14.3718 3.66357C14.3718 3.52144 14.3689 3.38005 14.3624 3.2392C15.0033 2.77588 15.5605 2.19756 16 1.53953C15.4118 1.80085 14.7789 1.97682 14.1149 2.05616C14.7926 1.64981 15.313 1.0067 15.5585 0.24021C14.9241 0.616357 14.2217 0.889688 13.4742 1.03709C12.8749 0.399076 12.0218 0 11.0779 0C9.26483 0 7.79464 1.4702 7.79464 3.28233C7.79464 3.54001 7.82357 3.79041 7.87962 4.0308C5.1516 3.89377 2.73239 2.58735 1.11352 0.601253C0.831273 1.08622 0.668767 1.64999 0.668767 2.25106C0.668767 3.38988 1.24837 4.3953 2.12968 4.98363C1.59121 4.96707 1.08531 4.81894 0.642926 4.57291C0.642198 4.58656 0.642198 4.60039 0.642198 4.61476C0.642198 6.2047 1.77392 7.53204 3.27578 7.83285C3.00008 7.90801 2.71001 7.94841 2.41047 7.94841C2.19901 7.94841 1.99338 7.9273 1.79339 7.88927C2.21121 9.19332 3.42318 10.1425 4.86007 10.1693C3.73636 11.0499 2.32094 11.5745 0.783049 11.5745C0.518272 11.5745 0.256952 11.5594 0 11.529C1.45273 12.46 3.17769 13.0036 5.03186 13.0036Z"
-                                            fill="currentColor" fill-opacity="0.6" />
-                                    </svg>
+                            <a class="footer__main-social-link" target="_blank" href="https://www.instagram.com/">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8 1.46667C10.1333 1.46667 10.4 1.46667 11.2667 1.53333C13.4667 1.6 14.4667 2.66667 14.5333 4.8C14.6 5.66667 14.6 5.86667 14.6 8C14.6 10.1333 14.6 10.4 14.5333 11.2C14.4667 13.3333 13.4 14.4 11.2667 14.4667C10.4 14.5333 10.2 14.5333 8 14.5333C5.86667 14.5333 5.6 14.5333 4.8 14.4667C2.6 14.4 1.6 13.3333 1.53333 11.2C1.46667 10.3333 1.46667 10.1333 1.46667 8C1.46667 5.86667 1.46667 5.6 1.53333 4.8C1.6 2.66667 2.66667 1.6 4.8 1.53333C5.6 1.46667 5.86667 1.46667 8 1.46667ZM8 0C5.8 0 5.53333 0 4.73333 0.0666667C1.8 0.2 0.2 1.8 0.0666667 4.73333C0 5.53333 0 5.8 0 8C0 10.2 0 10.4667 0.0666667 11.2667C0.2 14.2 1.8 15.8 4.73333 15.9333C5.53333 16 5.8 16 8 16C10.2 16 10.4667 16 11.2667 15.9333C14.2 15.8 15.8 14.2 15.9333 11.2667C16 10.4667 16 10.2 16 8C16 5.8 16 5.53333 15.9333 4.73333C15.8 1.8 14.2 0.2 11.2667 0.0666667C10.4667 0 10.2 0 8 0ZM8 3.86667C5.73333 3.86667 3.86667 5.73333 3.86667 8C3.86667 10.2667 5.73333 12.1333 8 12.1333C10.2667 12.1333 12.1333 10.2667 12.1333 8C12.1333 5.73333 10.2667 3.86667 8 3.86667ZM8 10.6667C6.53333 10.6667 5.33333 9.46667 5.33333 8C5.33333 6.53333 6.53333 5.33333 8 5.33333C9.46667 5.33333 10.6667 6.53333 10.6667 8C10.6667 9.46667 9.46667 10.6667 8 10.6667ZM12.2667 2.8C11.7333 2.8 11.3333 3.2 11.3333 3.73333C11.3333 4.26667 11.7333 4.66667 12.2667 4.66667C12.8 4.66667 13.2 4.26667 13.2 3.73333C13.2 3.2 12.8 2.8 12.2667 2.8Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
 
-                                </a>
-                            </li>
-                            <li class="footer__main-social-item"><a class="footer__main-social-link" target="_blank"
-                                    href="https://www.linkedin.com/">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3.33333 1.66667C3.33333 2.6 2.6 3.33333 1.66667 3.33333C0.733333 3.33333 0 2.6 0 1.66667C0 0.733333 0.733333 0 1.66667 0C2.6 0 3.33333 0.733333 3.33333 1.66667ZM3.33333 4.66667H0V15.3333H3.33333V4.66667ZM8.66667 4.66667H5.33333V15.3333H8.66667V9.73333C8.66667 6.6 12.6667 6.33333 12.6667 9.73333V15.3333H16V8.6C16 3.33333 10.0667 3.53333 8.66667 6.13333V4.66667Z"
-                                            fill="currentColor" fill-opacity="0.6" />
-                                    </svg>
+                            </a>
 
-                                </a>
-                            </li>
-                            <li class="footer__main-social-item"><a class="footer__main-social-link" target="_blank"
-                                    href="https://www.youtube.com/">
-                                    <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M15.1653 4.42995L15.168 4.43062C15.168 4.43062 15.1676 4.4305 15.1667 4.4303C15.1663 4.4302 15.1658 4.43008 15.1653 4.42995ZM4.32444 4.35686C6.91762 4.19575 11.7483 4.19575 14.3415 4.35686L14.3422 4.3644C14.4047 4.99716 14.4299 5.84143 14.4299 7.01915C14.4299 8.18238 14.4053 9.02689 14.3441 9.66498C11.6962 9.77026 6.97129 9.77027 4.32282 9.66502C4.261 9.03324 4.23602 8.19137 4.23602 7.01915C4.23602 5.84143 4.26123 4.99716 4.32369 4.3644L4.32444 4.35686ZM15.2422 9.61106C15.2422 9.61109 15.2405 9.61148 15.237 9.61215L15.2422 9.61106ZM3.49794 9.60768L3.50063 9.60836C3.49881 9.60793 3.49792 9.60769 3.49794 9.60768ZM0 7.01915C0 11.8412 0.388873 13.63 3.42208 13.8633C6.22196 14.0189 12.4439 14.0189 15.2438 13.8633C18.277 13.7078 18.6659 11.8412 18.6659 7.01915C18.6659 2.19713 18.277 0.408316 15.2438 0.174993C12.4439 -0.0583309 6.22196 -0.0583309 3.42208 0.174993C0.388873 0.408316 0 2.19713 0 7.01915ZM3.49794 4.43062C3.49792 4.43061 3.49884 4.43037 3.50073 4.42992L3.49794 4.43062ZM9.78228 8.73886C8.50388 9.37806 6.99973 8.44845 6.99973 7.01915C6.99973 5.58986 8.50388 4.66025 9.78228 5.29945C11.1994 6.008 11.1994 8.0303 9.78228 8.73886Z"
-                                            fill="currentColor" fill-opacity="0.6" />
-                                    </svg>
+                            <a class="footer__main-social-link" target="_blank" href="https://www.twitter.com/">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.03186 13.0036C11.0699 13.0036 14.3718 8.00118 14.3718 3.66357C14.3718 3.52144 14.3689 3.38005 14.3624 3.2392C15.0033 2.77588 15.5605 2.19756 16 1.53953C15.4118 1.80085 14.7789 1.97682 14.1149 2.05616C14.7926 1.64981 15.313 1.0067 15.5585 0.24021C14.9241 0.616357 14.2217 0.889688 13.4742 1.03709C12.8749 0.399076 12.0218 0 11.0779 0C9.26483 0 7.79464 1.4702 7.79464 3.28233C7.79464 3.54001 7.82357 3.79041 7.87962 4.0308C5.1516 3.89377 2.73239 2.58735 1.11352 0.601253C0.831273 1.08622 0.668767 1.64999 0.668767 2.25106C0.668767 3.38988 1.24837 4.3953 2.12968 4.98363C1.59121 4.96707 1.08531 4.81894 0.642926 4.57291C0.642198 4.58656 0.642198 4.60039 0.642198 4.61476C0.642198 6.2047 1.77392 7.53204 3.27578 7.83285C3.00008 7.90801 2.71001 7.94841 2.41047 7.94841C2.19901 7.94841 1.99338 7.9273 1.79339 7.88927C2.21121 9.19332 3.42318 10.1425 4.86007 10.1693C3.73636 11.0499 2.32094 11.5745 0.783049 11.5745C0.518272 11.5745 0.256952 11.5594 0 11.529C1.45273 12.46 3.17769 13.0036 5.03186 13.0036Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
 
-                                </a>
-                            </li>
-                        </ul>
+                            </a>
+
+                            <a class="footer__main-social-link" target="_blank" href="https://www.linkedin.com/">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.33333 1.66667C3.33333 2.6 2.6 3.33333 1.66667 3.33333C0.733333 3.33333 0 2.6 0 1.66667C0 0.733333 0.733333 0 1.66667 0C2.6 0 3.33333 0.733333 3.33333 1.66667ZM3.33333 4.66667H0V15.3333H3.33333V4.66667ZM8.66667 4.66667H5.33333V15.3333H8.66667V9.73333C8.66667 6.6 12.6667 6.33333 12.6667 9.73333V15.3333H16V8.6C16 3.33333 10.0667 3.53333 8.66667 6.13333V4.66667Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
+
+                            </a>
+
+                            <a class="footer__main-social-link" target="_blank" href="https://www.youtube.com/">
+                                <svg width="19" height="14" viewBox="0 0 19 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.1653 4.42995L15.168 4.43062C15.168 4.43062 15.1676 4.4305 15.1667 4.4303C15.1663 4.4302 15.1658 4.43008 15.1653 4.42995ZM4.32444 4.35686C6.91762 4.19575 11.7483 4.19575 14.3415 4.35686L14.3422 4.3644C14.4047 4.99716 14.4299 5.84143 14.4299 7.01915C14.4299 8.18238 14.4053 9.02689 14.3441 9.66498C11.6962 9.77026 6.97129 9.77027 4.32282 9.66502C4.261 9.03324 4.23602 8.19137 4.23602 7.01915C4.23602 5.84143 4.26123 4.99716 4.32369 4.3644L4.32444 4.35686ZM15.2422 9.61106C15.2422 9.61109 15.2405 9.61148 15.237 9.61215L15.2422 9.61106ZM3.49794 9.60768L3.50063 9.60836C3.49881 9.60793 3.49792 9.60769 3.49794 9.60768ZM0 7.01915C0 11.8412 0.388873 13.63 3.42208 13.8633C6.22196 14.0189 12.4439 14.0189 15.2438 13.8633C18.277 13.7078 18.6659 11.8412 18.6659 7.01915C18.6659 2.19713 18.277 0.408316 15.2438 0.174993C12.4439 -0.0583309 6.22196 -0.0583309 3.42208 0.174993C0.388873 0.408316 0 2.19713 0 7.01915ZM3.49794 4.43062C3.49792 4.43061 3.49884 4.43037 3.50073 4.42992L3.49794 4.43062ZM9.78228 8.73886C8.50388 9.37806 6.99973 8.44845 6.99973 7.01915C6.99973 5.58986 8.50388 4.66025 9.78228 5.29945C11.1994 6.008 11.1994 8.0303 9.78228 8.73886Z"
+                                        fill="currentColor" fill-opacity="0.6" />
+                                </svg>
+
+                            </a>
+
+                        </div>
                     </div>
                     <div class="footer__main-price">
                         <h3 class="footer__main-price-title">We accept</h3>
                         <ul class="footer__main-social-list">
-                            <li class="footer__main-social-item-pay"><a class="footer__main-social-link" target="_blank"
-                                    href=""><img src="./img/footer/price/paypal.png"></a></li>
-                            <li class="footer__main-social-item-pay"><a class="footer__main-social-link" target="_blank"
-                                    href=""><img src="./img/footer/price/mastercard.png"></a></li>
-                            <li class="footer__main-social-item-pay"><a class="footer__main-social-link" target="_blank"
-                                    href=""><img src="./img/footer/price/visa.png"></a></li>
-                            <li class="footer__main-social-item-pay"><a class="footer__main-social-link" target="_blank"
-                                    href=""><img src="./img/footer/price/american-exprese.png"></a></li>
+                            <li class="footer__main-social-item-pay"><a target="_blank" href=""><img
+                                        src="./img/footer/price/paypal.png"></a></li>
+                            <li class="footer__main-social-item-pay"><a target="_blank" href=""><img
+                                        src="./img/footer/price/mastercard.png"></a></li>
+                            <li class="footer__main-social-item-pay"><a target="_blank" href=""><img
+                                        src="./img/footer/price/visa.png"></a></li>
+                            <li class="footer__main-social-item-pay"><a target="_blank" href=""><img
+                                        src="./img/footer/price/american-exprese.png"></a></li>
                         </ul>
                     </div>
                 </div>

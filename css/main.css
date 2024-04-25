@@ -1152,7 +1152,6 @@ body {
 
 }
 
-/* .shop__section-counter {} */
 
 .shop__section-counter-div {
     display: flex;
@@ -1164,7 +1163,10 @@ body {
     display: flex;
     align-items: center;
     gap: 22px;
-    margin-right: 26px;
+    margin-right: 26px !important;
+    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -1204,7 +1206,6 @@ body {
     background-color: var(--main-color);
     padding: 10px 32px;
     border-radius: 6px;
-    margin-right: 10px;
 }
 
 .shop__section-counter-btn-add {
@@ -1218,7 +1219,6 @@ body {
     border: 1px solid var(--main-color);
     padding: 10px 32px;
     border-radius: 6px;
-    margin-right: 10px;
 }
 
 .shop__section-counter-btn-heart {
@@ -2308,6 +2308,12 @@ input[type="range"]::-moz-range-thumb {
     color: #46A358;
 }
 
+.shop__section-topShop {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 /* .heart__svg svg{
     /* display: flex; */
 
@@ -2321,6 +2327,40 @@ input[type="range"]::-moz-range-thumb {
         width: 100%;
         max-width: 100%;
     }
+
+    .shop__section-counter-btn-buy {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .shop__section-counter-btn-add {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .shop__section-counter-div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .shop__section-counter {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .shop__section-info-counter {
+        display: flex;
+        margin-bottom: 20px !important;
+        text-align: left !important;
+    }
+
+    .shop__section-topShop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
 }
 
 @media (max-width: 1116px) {
@@ -2441,6 +2481,55 @@ input[type="range"]::-moz-range-thumb {
         margin-bottom: 20px;
     }
 
+    .shop__section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop__section-container-images {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shop__section-counter-btn-buy {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .shop__section-counter-btn-add {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .shop__section-counter-div {
+        display: flex;
+        align-items: start;
+    }
+
+    .shop__section-info-counter {
+        margin-bottom: 20px;
+    }
+
+    .shop__section-topShop {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shop__section-about-product-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .shop__section-about-product-item {
+        margin-bottom: 0;
+    }
+
 }
 
 @media (max-width: 910px) {
@@ -2505,6 +2594,19 @@ input[type="range"]::-moz-range-thumb {
         font-size: 60px;
         line-height: 60px;
         margin-bottom: 3px;
+    }
+
+    .shop__section-about-product-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .shop__section-about-product-item {
+        margin-bottom: 0;
     }
 }
 
@@ -2664,6 +2766,9 @@ input[type="range"]::-moz-range-thumb {
         margin-bottom: 3px;
     }
 
+    .shop__section {
+        display: none;
+    }
 }
 
 @media (max-width: 620px) {
@@ -2933,11 +3038,13 @@ input[type="range"]::-moz-range-thumb {
         font-size: 13px;
         line-height: 16px;
     }
-    .section__plants-price-div{
+
+    .section__plants-price-div {
         display: flex;
         gap: 8px;
     }
-    .section__plants-price-sale{
+
+    .section__plants-price-sale {
         font-size: 14px;
     }
 
