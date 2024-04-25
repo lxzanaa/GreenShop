@@ -520,6 +520,20 @@ body {
     line-height: 16px;
 }
 
+.section__plants-price-div {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.section__plants-price-sale {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #a5a5a5;
+    text-decoration: line-through;
+}
+
 .section__aside-btn-div {
     width: 215px;
     display: flex;
@@ -2388,29 +2402,35 @@ input[type="range"]::-moz-range-thumb {
     .footer__main-list {
         text-align: center;
     }
-    .hero__container{
+
+    .hero__container {
         display: flex;
     }
-    .hero__img{
+
+    .hero__img {
         top: -20px;
         max-width: 400px;
         max-height: 400px;
     }
+
     .hero__heading {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 0;
     }
-    .hero__title{
+
+    .hero__title {
         max-width: 630px;
         font-weight: 900;
         font-size: 64px;
         line-height: 68px;
         margin-bottom: 3px;
     }
-    .hero__text{
+
+    .hero__text {
         display: none;
     }
+
     .hero__text-r {
         display: block;
         max-width: 200px;
@@ -2461,19 +2481,23 @@ input[type="range"]::-moz-range-thumb {
         margin-bottom: 0;
         padding-left: 27px;
     }
+
     .section__aside-sellect {
         display: none;
     }
-    .hero__img{
+
+    .hero__img {
         top: 10px;
         max-width: 370px;
         max-height: 370px;
     }
+
     .hero__heading {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 0;
     }
+
     .hero__title {
         max-width: 600px;
         font-weight: 900;
@@ -2488,19 +2512,23 @@ input[type="range"]::-moz-range-thumb {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .hover__img-div{
+
+    .hover__img-div {
         display: none;
     }
-    .hero__img{
+
+    .hero__img {
         top: -10px;
         max-width: 370px;
         max-height: 370px;
     }
+
     .hero__heading {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 0;
     }
+
     .hero__title {
         max-width: 550px;
         font-weight: 900;
@@ -2609,20 +2637,24 @@ input[type="range"]::-moz-range-thumb {
         grid-template-columns: 1fr;
         gap: 25px;
     }
-    .footer__main-list{
+
+    .footer__main-list {
         border-bottom: 1px solid #808080;
         padding-bottom: 12.5px;
     }
-    .hero__img{
+
+    .hero__img {
         top: 10px;
         max-width: 330px;
         max-height: 330px;
     }
+
     .hero__heading {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 0;
     }
+
     .hero__title {
         max-width: 500px;
         font-weight: 900;
@@ -2632,16 +2664,19 @@ input[type="range"]::-moz-range-thumb {
     }
 
 }
+
 @media (max-width: 620px) {
-    .hero__img{
+    .hero__img {
         top: 10px;
         max-width: 330px;
         max-height: 330px;
     }
+
     .hero__heading {
         font-size: 12px;
         line-height: 16px;
     }
+
     .hero__title {
         max-width: 300px;
         font-weight: 900;
@@ -2650,16 +2685,19 @@ input[type="range"]::-moz-range-thumb {
         margin-bottom: 3px;
     }
 }
+
 @media (max-width: 550px) {
-    .hero__img{
+    .hero__img {
         top: 20px;
         max-width: 250px;
         max-height: 250px;
     }
+
     .hero__heading {
         font-size: 12px;
         line-height: 16px;
     }
+
     .hero__title {
         max-width: 250px;
         font-weight: 900;
@@ -2893,6 +2931,13 @@ input[type="range"]::-moz-range-thumb {
     .section__plants-sale {
         font-size: 13px;
         line-height: 16px;
+    }
+    .section__plants-price-div{
+        display: flex;
+        gap: 8px;
+    }
+    .section__plants-price-sale{
+        font-size: 14px;
     }
 
     .section__aside-btn-div {
