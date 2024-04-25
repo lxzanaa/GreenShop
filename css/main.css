@@ -409,14 +409,19 @@ body {
 .section__plants-card {
     position: relative;
     border-top: 1px solid #fff;
-    /* border: 1px solid red; */
 }
 
+.section__plants-img {}
+
 .shop__plants-cartt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    /* border: 3px solid blue; */
     display: flex;
     overflow: hidden;
+    background-color: #FBFBFB;
+    margin-bottom: 12px;
 }
 
 .section__plants-sale {
@@ -434,11 +439,9 @@ body {
 
 .section__plants-card:hover {
     border-top: 1px solid var(--main-color);
-
 }
 
 .section__plants-card:hover .img__hover {
-    /* background-color: red; */
     display: flex;
     transition: 0.2s;
     position: absolute;
@@ -446,11 +449,6 @@ body {
     z-index: 1;
     right: 64px;
     gap: 10px;
-    /* .img__hover {
-        display: flex;
-        align-items: center;
-        transition: all 0.2s;
-    } */
 }
 
 .img__hover {
@@ -469,16 +467,9 @@ body {
 }
 
 .section__plants-card2:hover {
-    /* background-color: red; */
     width: 219px;
     transition: 0.2s;
     border-top: 1px solid var(--main-color);
-    /* 
-    .img__hover2 {
-        display: flex;
-        align-items: center;
-        transition: all 0.2s;
-    } */
 }
 
 .img__hover2 {
@@ -490,18 +481,10 @@ body {
     gap: 10px;
 }
 
-/* .img__hover {
-    position: absolute;
-    bottom: 65px;
-    z-index: 1;
-    right: 64px;
-    display: none;
-    gap: 10px;
-} */
 
 .hover__img-div {
     padding: 8px;
-    background-color: #fff;
+    background-color: red;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -511,8 +494,11 @@ body {
     fill: green;
 }
 
+.hover__img-div svg {
+    display: flex;
+}
+
 .section__plants-img {
-    margin-bottom: 12px;
     max-width: 258px;
     width: 100%;
     max-height: 300px;
@@ -569,7 +555,8 @@ body {
 }
 
 .about__flower-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
 }
@@ -2265,7 +2252,8 @@ input[type="range"]::-moz-range-thumb {
 .hero__text-r {
     display: none;
 }
-.heart__svg{
+
+.heart__svg {
     position: absolute;
     z-index: 1;
     right: 11px;
@@ -2281,8 +2269,8 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
 }
 
-.heart__svg svg{
-    margin: auto ;
+.heart__svg svg {
+    margin: auto;
     color: #46A358;
 }
 
@@ -2291,14 +2279,16 @@ input[type="range"]::-moz-range-thumb {
 
 
 @media (max-width: 1200px) {
-    .section__plants-sidebar{
+    .section__plants-sidebar {
         display: none;
     }
-    .section__plants-aside{
+
+    .section__plants-aside {
         width: 100%;
         max-width: 100%;
     }
 }
+
 @media (max-width: 910px) {
     .header__container-list {
         display: none;
@@ -2328,7 +2318,14 @@ input[type="range"]::-moz-range-thumb {
         width: 100%;
     }
 
-    .footer__main {}
+    /* .footer__main {} */
+}
+
+@media (max-width: 850px) {
+    .section__plants-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -2460,7 +2457,7 @@ input[type="range"]::-moz-range-thumb {
         padding: 0;
     }
 
-    .section__plants-container {}
+    /* .section__plants-container {} */
 
     .section__plants-sidebar {
         display: none;
@@ -2498,10 +2495,6 @@ input[type="range"]::-moz-range-thumb {
         display: none;
     }
 
-    .section__plants-img {
-        border-radius: 20px;
-    }
-
     .section__plants-card:hover {
         border-top: transparent;
     }
@@ -2510,10 +2503,15 @@ input[type="range"]::-moz-range-thumb {
         border-top: transparent;
     }
 
+    .shop__plants-cartt {
+        border-radius: 20px;
+    }
+
     .section__plants-img {
         max-width: 100%;
         width: 175px;
         height: 200px;
+        border-radius: 20px;
     }
 
     .section__plants-card:hover .img__hover {
@@ -2532,11 +2530,32 @@ input[type="range"]::-moz-range-thumb {
         font-size: 16px;
         line-height: 16px;
     }
-    .section__plants-aside{
+
+    .section__plants-aside {
         width: 100%;
     }
-    .section__plants-sale{
-        display: none;
+
+    .section__plants-sale {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .section__aside-btn-div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #section__plants-card-padding {
+        padding-top: 31px;
+    }
+
+    .section__plants-main {
+        margin-bottom: 60px;
     }
     
+
 }
