@@ -484,7 +484,7 @@ body {
 
 .hover__img-div {
     padding: 8px;
-    background-color: red;
+    background-color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -827,8 +827,8 @@ body {
 .footer__container-first {
     width: 100%;
     background-color: #46A3581A;
-    border-top: 1px solid var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-top: 0.3px solid var(--header-border-b);
+    border-bottom: 0.3px solid var(--header-border-b);
 }
 
 .footer__logo {
@@ -2370,6 +2370,56 @@ input[type="range"]::-moz-range-thumb {
         margin-left: auto;
     }
 
+    .footer__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .footer__main-social-list,
+    .footer__main-social-list {
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer__main-price-title,
+    .footer__main-title,
+    .footer__main-social-title,
+    .footer__main-list {
+        text-align: center;
+    }
+    .hero__container{
+        display: flex;
+    }
+    .hero__img{
+        top: -20px;
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .hero__heading {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    .hero__title{
+        max-width: 630px;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 68px;
+        margin-bottom: 3px;
+    }
+    .hero__text{
+        display: none;
+    }
+    .hero__text-r {
+        display: block;
+        max-width: 200px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width: 910px) {
@@ -2411,12 +2461,52 @@ input[type="range"]::-moz-range-thumb {
         margin-bottom: 0;
         padding-left: 27px;
     }
+    .section__aside-sellect {
+        display: none;
+    }
+    .hero__img{
+        top: 10px;
+        max-width: 370px;
+        max-height: 370px;
+    }
+    .hero__heading {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    .hero__title {
+        max-width: 600px;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 3px;
+    }
 }
 
 @media (max-width: 850px) {
     .section__plants-main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .hover__img-div{
+        display: none;
+    }
+    .hero__img{
+        top: -10px;
+        max-width: 370px;
+        max-height: 370px;
+    }
+    .hero__heading {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    .hero__title {
+        max-width: 550px;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 3px;
     }
 }
 
@@ -2514,7 +2604,69 @@ input[type="range"]::-moz-range-thumb {
         padding: 0;
     }
 
+    .footer__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .footer__main-list{
+        border-bottom: 1px solid #808080;
+        padding-bottom: 12.5px;
+    }
+    .hero__img{
+        top: 10px;
+        max-width: 330px;
+        max-height: 330px;
+    }
+    .hero__heading {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+    .hero__title {
+        max-width: 500px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 3px;
+    }
 
+}
+@media (max-width: 620px) {
+    .hero__img{
+        top: 10px;
+        max-width: 330px;
+        max-height: 330px;
+    }
+    .hero__heading {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .hero__title {
+        max-width: 300px;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 3px;
+    }
+}
+@media (max-width: 550px) {
+    .hero__img{
+        top: 20px;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .hero__heading {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .hero__title {
+        max-width: 250px;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 3px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -2524,7 +2676,8 @@ input[type="range"]::-moz-range-thumb {
         justify-content: center;
         gap: 25px;
     }
-    .footer__container-contact-item{
+
+    .footer__container-contact-item {
         display: flex;
         align-items: center;
         justify-content: center;
