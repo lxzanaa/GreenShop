@@ -145,36 +145,12 @@ shop__cartDelete.forEach(function (item, index) {
     });
 });
 
-let btnMinusCount = document.querySelector(".shop__section-button-minusCount");
-let btnPlusCount = document.querySelector(".shop__section-button-plusCount");
-let spanInput = document.querySelector(".shop__section-number");
-let shop__sectionTitlePrice = document.querySelector('.shop__section-about-flower-title-price')
 
-btnMinusCount.addEventListener('click', function () {
-    let currentValue = parseInt(spanInput.textContent);
+function updatePrice(quantity) {
+    const pricePerUnit = 119.00;
+    countPrice.textContent = `$${quantity * pricePerUnit}`;
+}
 
-    if (currentValue > 1) {
-        spanInput.textContent = currentValue - 1;
-    } else {
-        spanInput.textContent = 1;
-    }
-});
-
-btnPlusCount.addEventListener('click', function () {
-    let currentValue = parseInt(spanInput.textContent);
-
-    if (currentValue < 20) {
-        spanInput.textContent = currentValue + 1 ;
-    } else {
-        spanInput.textContent = 20;
-    }
-});
-
-let checkbox = document.querySelector(".checkbox");
-
-checkbox.addEventListener('click', function () {
-    checkbox.classList.toggle("check")
-})
 
 
 let checkbox__formPaymentChoose = document.querySelectorAll(".checkbox__form-payment-choose")
@@ -204,50 +180,9 @@ let checkout__popup = document.querySelector(".checkout__popup")
 
 checkbox__formPaymentMethodBtn.addEventListener('click', function () {
     checkout__popup.classList.toggle("active")
-    
+
 })
 
 
 
 
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     const priceRange = document.getElementById("price-range");
-//     const priceOutput = document.getElementById("price-output");
-//     const products = document.querySelectorAll(".product");
-
-//     // Initial price range output
-//     // priceOutput.textContent = "$" + priceRange.value;
-
-//     // Update price range output on input change
-//     priceRange.addEventListener("input", function() {
-//         priceOutput.textContent = "$" + this.value;
-//         filterProductsByPrice(this.value);
-//     });
-
-//     // Function to filter products based on price
-//     function filterProductsByPrice(maxPrice) {
-//         products.forEach(function(product) {
-//             const productPrice = parseInt(product.dataset.price);
-//             if (productPrice <= maxPrice) {
-//                 product.style.display = "block";
-//             } else {
-//                 product.style.display = "none";
-//             }
-//         });
-//     }
-// });
-
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
     <title>SHOP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
-    <header class="header">
+    <header id="shop__header" class="header">
         <div class="header__container container">
             <a href="index.html"><img class="header__container-logo" src="./img/header/greenshop.svg"
                     alt="greenshop-logo"></a>
@@ -95,7 +96,7 @@
                                 <span class="shop__section-number">1</span>
                                 <button class="shop__section-button-plusCount count">+</button>
                             </div>
-                            <div class="shop__section-topShop" >
+                            <div class="shop__section-topShop">
                                 <button class="shop__section-counter-btn-buy btn">Buy NOW</button>
                                 <button class="shop__section-counter-btn-add btn">Add to cart</button>
                                 <button class="shop__section-counter-btn-heart"><img
@@ -103,6 +104,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="shop__section-about-product">
                         <ul class="shop__section-about-product-list">
                             <li class="shop__section-about-product-item">SKU: <a class="shop__section-about-product"
@@ -132,6 +134,175 @@
             </div>
         </div>
     </section>
+
+
+    <div class="responsive__shop">
+
+        <section class="shop__mobile">
+            <div class="shop__mobile-container">
+                <div class="shop__mobile-swiper">
+
+                    <div class="swiper mySwiper">
+                        <div class="head__btns">
+                            <a class="left" href="index.html">
+                                <svg style="display: flex;" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.917 15.8334C12.917 15.8334 7.08366 12.38 7.08366 10C7.08366 7.62085 12.917 4.16669 12.917 4.16669"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                            <button class="heart__svg2">
+                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.5 14.2349C8.27222 14.2349 8.05261 14.1523 7.88147 14.0024C7.23511 13.4373 6.61194 12.9061 6.06213 12.4376L6.05933 12.4352C4.44739 11.0615 3.05542 9.87524 2.08691 8.70667C1.00427 7.40027 0.5 6.16162 0.5 4.80847C0.5 3.49377 0.950806 2.28088 1.76929 1.39307C2.59753 0.494751 3.73401 0 4.96973 0C5.89331 0 6.73914 0.291992 7.48364 0.867798C7.85938 1.15845 8.19995 1.51416 8.5 1.92908C8.80017 1.51416 9.14062 1.15845 9.51648 0.867798C10.261 0.291992 11.1068 0 12.0304 0C13.266 0 14.4026 0.494751 15.2308 1.39307C16.0493 2.28088 16.5 3.49377 16.5 4.80847C16.5 6.16162 15.9958 7.40027 14.9132 8.70654C13.9447 9.87524 12.5529 11.0614 10.9412 12.4349C10.3904 12.9042 9.76624 13.4362 9.11841 14.0027C8.94739 14.1523 8.72766 14.2349 8.5 14.2349ZM4.96973 0.937256C3.9989 0.937256 3.10706 1.32471 2.45825 2.02832C1.7998 2.74255 1.43713 3.72986 1.43713 4.80847C1.43713 5.94653 1.86011 6.96436 2.80847 8.10864C3.7251 9.21472 5.0885 10.3766 6.66711 11.7219L6.67004 11.7244C7.22192 12.1947 7.84753 12.7279 8.49866 13.2972C9.15369 12.7268 9.78027 12.1927 10.3333 11.7217C11.9117 10.3763 13.275 9.21472 14.1917 8.10864C15.1399 6.96436 15.5629 5.94653 15.5629 4.80847C15.5629 3.72986 15.2002 2.74255 14.5417 2.02832C13.8931 1.32471 13.0011 0.937256 12.0304 0.937256C11.3192 0.937256 10.6663 1.16333 10.0897 1.60913C9.57593 2.00659 9.21802 2.50903 9.00818 2.8606C8.90027 3.04138 8.71033 3.14929 8.5 3.14929C8.28967 3.14929 8.09973 3.04138 7.99182 2.8606C7.7821 2.50903 7.42419 2.00659 6.91028 1.60913C6.33374 1.16333 5.68079 0.937256 4.96973 0.937256Z"
+                                        fill="#46A358" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img style="display: flex;" class="slide__img" src="./img/1.png"
+                                    alt="flower">
+                            </div>
+                            <div class="swiper-slide"><img style="display: flex;" class="slide__img" src="./img/1.png"
+                                    alt="flower">
+                            </div>
+                            <div class="swiper-slide"><img style="display: flex;" class="slide__img" src="./img/1.png"
+                                    alt="flower">
+                            </div>
+                            <div class="swiper-slide"><img style="display: flex;" class="slide__img" src="./img/1.png"
+                                    alt="flower">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="bg__color">
+            <section class="shop__about-product">
+                <div class="shop__about-product-container">
+                    <div class="about__div">
+                        <h3 class="product__name">Barberton Daisy</h3>
+                        <div class="shop__mobile-review">
+                            <img style="display: flex;" class="shop__mobile-review-star" src="./img/Star.svg">
+                            <p class="number-of-reviews">4.8</p>
+                            <p class="number-of-reviews-span">(19)</p>
+                        </div>
+                    </div>
+                    <p class="shop__about-text">The ceramic cylinder planters come with a wooden stand to help elevate
+                        your
+                        plants off the ground. The
+                        ceramic cylinder planters come.</p>
+                    <div class="shop__mobile-size">
+                        <h3 class="shop__mobile-title">Size:</h3>
+                        <ul class="shop__section-size-list">
+                            <li class="shop__section-size-item active"><span>S</span></li>
+                            <li class="shop__section-size-item"><span>X</span></li>
+                            <li class="shop__section-size-item"><span>L</span></li>
+                            <li class="shop__section-size-item"><span>XL</span></li>
+                        </ul>
+                    </div>
+                    <ul class="shop__section-product-list">
+                        <li class="shop__section-product-item">SKU: <a class="shop__section-product-link"
+                                href="#">1995751877966</a></li>
+                        <li class="shop__section-product-item">Categories: <a class="shop__section-product-link"
+                                href="#">Potter Plants</a></li>
+                        <li class="shop__section-product-item">Tags: <a class="shop__section-product-link"
+                                href="#">Home,
+                                Garden, Plants</a></li>
+                    </ul>
+                    <!-- 
+                <div class="shop__section-counter">
+                    <div style="display: flex; align-items: left; " class="shop__section-counter-div">
+                        <div class="shop__section-info-counter">
+                            <button class="shop__section-button-minusCount count">-</button>
+                            <span class="shop__section-number">1</span>
+                            <button class="shop__section-button-plusCount count">+</button>
+                        </div>
+                        <div class="shop__section-topShop">
+                            <button class="shop__section-counter-btn-buy btn">Buy NOW</button>
+                            <button class="shop__section-counter-btn-add btn">Add to cart</button>
+                            <button class="shop__section-counter-btn-heart"><img
+                                    src="./img/shop/shop-card/heart.svg"></button>
+                        </div>
+                    </div>
+                </div> -->
+
+
+                    <!-- <div class="shop__section-about-product">
+                    <ul class="shop__section-about-product-list">
+                        <li class="shop__section-about-product-item">SKU: <a class="shop__section-about-product"
+                                href="#">1995751877966</a></li>
+                        <li class="shop__section-about-product-item">Categories: <a class="shop__section-about-product"
+                                href="#">Potter Plants</a></li>
+                        <li class="shop__section-about-product-item">Tags: <a class="shop__section-about-product"
+                                href="#">Home, Garden, Plants</a></li>
+                        <li class="shop__section-about-product-item-social">Share this products:
+                            <span class="shop__section-about-social">
+                                <a class="shop__section-about-social-links" target="_blank"
+                                    href="https://www.facebook.com/"><img src="./img/shop/shop-card/Facebook.svg"
+                                        alt="Facebook"></a>
+                                <a class="shop__section-about-social-links" target="_blank"
+                                    href="https://www.twitter.com/"><img src="./img/shop/shop-card/Twitter.svg"
+                                        alt="Twitter"></a>
+                                <a class="shop__section-about-social-links" target="_blank"
+                                    href="https://www.linkedin.com/"><img src="./img/shop/shop-card/Linkedin.svg"
+                                        alt="Linkedin"></a>
+                                <a class="shop__section-about-social-links" target="_blank" href="#"><img
+                                        src="./img/shop/shop-card/Message.svg" alt="Message"></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div> -->
+                </div>
+            </section>
+        </div>
+
+        <div class="fixed-section">
+            <div class="buy__fixed_section">
+                <div class="buy__fixed_section-container">
+                    <div class="buy__fixed_section-counter">
+                        <div class="counter">
+                            <p class="count-name">Qty</p>
+                            <button class="count-minus">-</button>
+                            <span class="count-number">1</span>
+                            <button class="count-plus">+</button>
+                        </div>
+                        <h3 class="count__price">$119.00</h3>
+                    </div>
+
+                    <div class="buy-category">
+                        <a href="cart.html" class="buy__fixed_section-buy"> buy now</a>
+
+                        <button class="buy__fixed_section-basket">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.333 6.80134L17.3894 12.7778C17.2178 13.9562 16.2742 14.7138 15.0732 14.7138H6.83791C5.72271 14.7138 4.6933 13.872 4.52173 12.7778L3.49232 5.79124L3.23497 3.85521C3.14918 3.35016 2.72026 3.01346 2.11977 3.01346H1.51928C1.17615 3.01346 0.833008 2.67676 0.833008 2.34006C0.833008 2.00336 1.17615 1.66666 1.51928 1.66666H2.11977C3.32075 1.66666 4.35016 2.50841 4.43595 3.68686L4.60752 5.03366H16.7889C17.2178 5.03366 17.6467 5.20201 17.9041 5.53871C18.2472 5.87541 18.333 6.38046 18.333 6.80134Z"
+                                    fill="#727272" />
+                                <path
+                                    d="M15.2448 18.3333C15.7185 18.3333 16.1026 17.9565 16.1026 17.4916C16.1026 17.0267 15.7185 16.6498 15.2448 16.6498C14.771 16.6498 14.3869 17.0267 14.3869 17.4916C14.3869 17.9565 14.771 18.3333 15.2448 18.3333Z"
+                                    fill="#727272" />
+                                <path
+                                    d="M6.66634 18.3333C7.14012 18.3333 7.52418 17.9565 7.52418 17.4916C7.52418 17.0267 7.14012 16.6498 6.66634 16.6498C6.19257 16.6498 5.8085 17.0267 5.8085 17.4916C5.8085 17.9565 6.19257 18.3333 6.66634 18.3333Z"
+                                    fill="#727272" />
+                            </svg>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <section class="section__about-product">
         <div class="section__about-product-container container">
@@ -520,7 +691,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer shoping__footer">
         <div class="footer__container-main container">
 
             <div class="footer__main">
@@ -629,6 +800,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
     <script src="./js/app.js"></script>
 </body>
 
