@@ -186,3 +186,5 @@ checkbox__formPaymentMethodBtn.addEventListener('click', function () {
 
 
 
+
+

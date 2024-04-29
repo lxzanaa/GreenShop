@@ -161,7 +161,8 @@ body {
     width: 8px;
     height: 8px;
 }
-.hero__container{
+
+.hero__container {
     position: relative;
     display: flex;
     align-items: center;
@@ -174,6 +175,7 @@ body {
     padding-bottom: 85px;
 
 }
+
 .hero___container {
     position: relative;
     background-color: #f9f9f9;
@@ -507,7 +509,8 @@ body {
     display: none;
     gap: 10px;
 }
-.img__hover2:hover{
+
+.img__hover2:hover {
     bottom: 0;
 }
 
@@ -1255,15 +1258,34 @@ body {
     border-radius: 6px;
 }
 
-.shop__section-counter-btn-heart {
-    color: var(--main-color);
-    border: none;
+.heart-button-2 {
+    display: inline-block;
     background-color: transparent;
-    border: 1px solid var(--main-color);
-    padding: 10px 10px 5px 10px;
-    border-radius: 6px;
+    border: none;
+    padding: 0;
     cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
 }
+
+.heart-icon-2 {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke-width: 2;
+}
+
+.heart-button-2.clicked .heart-path {
+    stroke: red;
+}
+
+.heart-button-2.clicked {
+    outline: none;
+}
+
 
 .shop__section-about-product {
     text-decoration: none;
@@ -1370,6 +1392,7 @@ body {
 .section__ReletedProducts-img {
     width: 219px;
     margin-bottom: 12px;
+    overflow: hidden;
 }
 
 .section__ReletedProducts-product-name {
@@ -1598,7 +1621,10 @@ body {
     border: 1px solid var(--main-color);
     border-radius: 3px 0 0 3px;
     width: 332px;
-
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a5a5a5;
 }
 
 .shop__cart-total-inp-btn {
