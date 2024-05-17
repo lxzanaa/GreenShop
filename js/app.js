@@ -32,6 +32,61 @@ shopSectionSizeItem.forEach(function (item, index) {
 
 
 
+let header__containerLink = document.querySelectorAll(".header__container-link")
+
+header__containerLink.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        header__containerLink.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
+
+
+let section__sidebarItem = document.querySelectorAll(".section__sidebar-item")
+
+section__sidebarItem.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        section__sidebarItem.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
+
+let section__sidebarItem2 = document.querySelectorAll(".section__sidebar-item2")
+
+section__sidebarItem2.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        section__sidebarItem2.forEach(function (element) {
+            element.classList.remove("green-active")
+        })
+        item.classList.add("green-active");
+    })
+})
+
+let section__asideItem = document.querySelectorAll(".section__aside-item")
+
+section__asideItem.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        section__asideItem.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
+
+let section__asideBtns = document.querySelectorAll(".section__aside-btns")
+
+section__asideBtns.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        section__asideBtns.forEach(function (element) {
+            element.classList.remove("active")
+        })
+        item.classList.add("active");
+    })
+})
 
 
 let sectionAboutProductItem = document.querySelectorAll(".section__about-product-item");
