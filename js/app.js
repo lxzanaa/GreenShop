@@ -1,6 +1,4 @@
 
-
-
 let product = document.querySelectorAll('.shop__section-product')
 let mainImg = document.querySelector('.shop__section-main-image')
 
@@ -31,7 +29,6 @@ shopSectionSizeItem.forEach(function (item, index) {
         item.classList.add("active");
     })
 })
-
 
 
 
