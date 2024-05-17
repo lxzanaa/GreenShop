@@ -1,58 +1,3 @@
-let headerContainerLink = document.querySelectorAll(".header__container-link")
-
-headerContainerLink.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        headerContainerLink.forEach(function (element) {
-            element.classList.remove("active")
-        })
-        item.classList.add("active");
-    })
-})
-
-let sectionSidebarItem = document.querySelectorAll(".section__sidebar-item")
-
-sectionSidebarItem.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        sectionSidebarItem.forEach(function (element) {
-            element.classList.remove("active")
-        })
-        item.classList.add("active");
-    })
-})
-
-let sectionSidebarItem2 = document.querySelectorAll(".section__sidebar-item2")
-
-sectionSidebarItem2.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        sectionSidebarItem2.forEach(function (element) {
-            element.classList.remove("green-active")
-        })
-        item.classList.add("green-active");
-    })
-})
-
-
-let sectionAsideItem = document.querySelectorAll(".section__aside-item")
-
-sectionAsideItem.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        sectionAsideItem.forEach(function (element) {
-            element.classList.remove("active")
-        })
-        item.classList.add("active");
-    })
-})
-
-let sectionAsideBtns = document.querySelectorAll(".section__aside-btns")
-
-sectionAsideBtns.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        sectionAsideBtns.forEach(function (element) {
-            element.classList.remove("active")
-        })
-        item.classList.add("active");
-    })
-})
 
 
 
@@ -88,35 +33,6 @@ shopSectionSizeItem.forEach(function (item, index) {
 })
 
 
-let shopSectionButtonMinus2 = document.querySelectorAll(".shop__section-button-minus2");
-let shopSectionButtonPlus2 = document.querySelectorAll(".shop__section-button-plus2");
-let shopSectionNumber2 = document.querySelectorAll(".shop__section-number2");
-
-// Minus tugmasi uchun hodisa qo'shish
-shopSectionButtonMinus2.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        // shopSectionNumber2[index] orqali hozirgi elementni tanlab olamiz
-        let currentValue = parseInt(shopSectionNumber2[index].textContent);
-        if (currentValue > 1) {
-            shopSectionNumber2[index].textContent = currentValue - 1;
-        } else {
-            shopSectionNumber2[index].textContent = 1;
-        }
-    });
-});
-
-// Plus tugmasi uchun hodisa qo'shish
-shopSectionButtonPlus2.forEach(function (item, index) {
-    item.addEventListener('click', function () {
-        // shopSectionNumber2[index] orqali hozirgi elementni tanlab olamiz
-        let currentValue = parseInt(shopSectionNumber2[index].textContent);
-        if (currentValue < 20) {
-            shopSectionNumber2[index].textContent = currentValue + 1;
-        } else {
-            shopSectionNumber2[index].textContent = 20;
-        }
-    });
-});
 
 
 
@@ -182,7 +98,6 @@ checkbox__formPaymentMethodBtn.addEventListener('click', function () {
     checkout__popup.classList.toggle("active")
 
 })
-
 
 
 

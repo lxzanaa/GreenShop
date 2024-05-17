@@ -24,8 +24,21 @@
                 <li class="header__container-item"><a class="header__container-link" href="#">Blogs</a></li>
             </ul>
             <div class="header__container-login">
-                <a href="#"><img src="./img/header/header-search.svg" alt="search"></a>
-                <a href="cart.html"><img src="./img/header/header-cart-shopping.svg" alt="cart-shopping"></a>
+                <a href="#">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a style="position: relative;" href="cart.html">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                            fill="currentColor" />
+                    </svg>
+                    <span id="cart__number" style="position: absolute; top: -5px; right: -12px; border: 1px solid ;" >0</span>
+                </a>
                 <a class="header__container-loginBtn btn" href="#"><span><img src="./img/header/Logout.svg"
                             alt="Logout"></span>Login</a>
             </div>
@@ -49,6 +62,7 @@
 
     </header>
 
+
     <div class="home-to-shop container">
         <a class="home-to-home" href="index.html">Home /</a>
         <a class="home-to-shop-btn" href="shop.html">Shop</a>
@@ -63,7 +77,7 @@
                     <img class="shop__section-product" src="./img/shop/shop-card/2.png" alt="flower">
                     <img class="shop__section-product" src="./img/shop/shop-card/1.png" alt="flower">
                 </div>
-                <div class="shop__section-main-img">
+                <div id="container__imgHover" class="shop__section-main-img">
                     <a href="#"><img class="shop__section-search" src="./img/shop/shop-card/Search.svg"></a>
                     <img class="shop__section-main-image" src="./img/shop/shop-card/1.png" alt="main img">
                 </div>
@@ -138,7 +152,6 @@
             </div>
         </div>
     </section>
-
 
     <div class="responsive__shop">
 
@@ -222,49 +235,6 @@
                                 href="#">Home,
                                 Garden, Plants</a></li>
                     </ul>
-                    <!-- 
-                <div class="shop__section-counter">
-                    <div style="display: flex; align-items: left; " class="shop__section-counter-div">
-                        <div class="shop__section-info-counter">
-                            <button class="shop__section-button-minusCount count">-</button>
-                            <span class="shop__section-number">1</span>
-                            <button class="shop__section-button-plusCount count">+</button>
-                        </div>
-                        <div class="shop__section-topShop">
-                            <button class="shop__section-counter-btn-buy btn">Buy NOW</button>
-                            <button class="shop__section-counter-btn-add btn">Add to cart</button>
-                            <button class="shop__section-counter-btn-heart"><img
-                                    src="./img/shop/shop-card/heart.svg"></button>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                    <!-- <div class="shop__section-about-product">
-                    <ul class="shop__section-about-product-list">
-                        <li class="shop__section-about-product-item">SKU: <a class="shop__section-about-product"
-                                href="#">1995751877966</a></li>
-                        <li class="shop__section-about-product-item">Categories: <a class="shop__section-about-product"
-                                href="#">Potter Plants</a></li>
-                        <li class="shop__section-about-product-item">Tags: <a class="shop__section-about-product"
-                                href="#">Home, Garden, Plants</a></li>
-                        <li class="shop__section-about-product-item-social">Share this products:
-                            <span class="shop__section-about-social">
-                                <a class="shop__section-about-social-links" target="_blank"
-                                    href="https://www.facebook.com/"><img src="./img/shop/shop-card/Facebook.svg"
-                                        alt="Facebook"></a>
-                                <a class="shop__section-about-social-links" target="_blank"
-                                    href="https://www.twitter.com/"><img src="./img/shop/shop-card/Twitter.svg"
-                                        alt="Twitter"></a>
-                                <a class="shop__section-about-social-links" target="_blank"
-                                    href="https://www.linkedin.com/"><img src="./img/shop/shop-card/Linkedin.svg"
-                                        alt="Linkedin"></a>
-                                <a class="shop__section-about-social-links" target="_blank" href="#"><img
-                                        src="./img/shop/shop-card/Message.svg" alt="Message"></a>
-                            </span>
-                        </li>
-                    </ul>
-                </div> -->
                 </div>
             </section>
         </div>
@@ -343,13 +313,13 @@
     <section class="section__ReletedProducts">
         <div class="section__ReletedProducts-container container">
             <div>
-                <h3 class="section__ReletedProducts-title">Releted Products</h3>
+                <h3 class="section__ReletedProducts-title">You may be interested in</h3>
             </div>
             <div class="section__ReletedProducts-plants-div">
-                <div class="section__plants-card">
-                    <a href="shop.html"><img width="219px" height="255px" class="section__ReletedProducts-img"
+                <div class="section__plants-card2">
+                    <a href="#"><img width="219px" height="255px" class="section__ReletedProducts-img"
                             src="./img/shop/releted-products/1.png" alt="flower"></a>
-                    <div class="img__hover">
+                    <div class="img__hover2">
 
                         <button class="hover__img-div">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -402,10 +372,10 @@
                     <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
                     <p class="section__ReletedProducts-price">$129.00</p>
                 </div>
-                <div class="section__plants-card">
+                <div class="section__plants-card2">
                     <a href="#"><img width="219px" height="255px" class="section__ReletedProducts-img"
                             src="./img/shop/releted-products/2.png" alt="flower"></a>
-                    <div class="img__hover">
+                    <div class="img__hover2">
 
                         <button class="hover__img-div">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -458,10 +428,10 @@
                     <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
                     <p class="section__ReletedProducts-price">$129.00</p>
                 </div>
-                <div class="section__plants-card">
+                <div class="section__plants-card2">
                     <a href="#"><img width="219px" height="255px" class="section__ReletedProducts-img"
                             src="./img/shop/releted-products/3.png" alt="flower"></a>
-                    <div class="img__hover">
+                    <div class="img__hover2">
 
                         <button class="hover__img-div">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -514,10 +484,10 @@
                     <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
                     <p class="section__ReletedProducts-price">$129.00</p>
                 </div>
-                <div class="section__plants-card">
+                <div class="section__plants-card2">
                     <a href="#"><img width="219px" height="255px" class="section__ReletedProducts-img"
                             src="./img/shop/releted-products/4.png" alt="flower"></a>
-                    <div class="img__hover">
+                    <div class="img__hover2">
 
                         <button class="hover__img-div">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -570,10 +540,10 @@
                     <p class="section__ReletedProducts-product-name">Barberton Daisy</p>
                     <p class="section__ReletedProducts-price">$129.00</p>
                 </div>
-                <div class="section__plants-card">
+                <div class="section__plants-card2">
                     <a href="#"><img width="219px" height="255px" class="section__ReletedProducts-img"
                             src="./img/shop/releted-products/5.png" alt="flower"></a>
-                    <div class="img__hover">
+                    <div class="img__hover2">
 
                         <button class="hover__img-div">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"

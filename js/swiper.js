@@ -33,44 +33,57 @@ countPlus.addEventListener('click', function () {
     }
 });
 
-function updatePrice(quantity) {
+function updatePrice(index, quantity) {
     const pricePerUnit = 119.00;
-    countPrice.textContent = `$${quantity * pricePerUnit}`;
+    countPrice[index].textContent = `$${(quantity * pricePerUnit).toFixed(2)}`;
 }
 
+let shopSectionButtonMinus2 = document.querySelectorAll(".shop__section-button-minusCount");
+let shopSectionButtonPlus2 = document.querySelectorAll(".shop__section-button-plusCount");
+let shopSectionNumber2 = document.querySelectorAll(".shop__section-number");
+let shop__cartTotalPrice = document.querySelectorAll(".shop__section-about-flower-title-price");
 
-
-let countMinusshop = document.querySelector(".shop__section-button-minusCount");
-let countPlusshop = document.querySelector(".shop__section-button-plusCount");
-let countNumbershop = document.querySelector(".shop__section-number");
-let countPriceshop = document.querySelector('.shop__section-about-flower-title-price');
-
-countMinusshop.addEventListener('click', function () {
-    let currentValue = parseInt(countNumbershop.textContent);
-
-    if (currentValue > 1) {
-        countNumbershop.textContent = currentValue - 1;
-        updatePrice(currentValue - 1);
-    } else {
-        countNumbershop.textContent = 1;
-        updatePrice(1);
-    }
+shopSectionButtonMinus2.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        let currentValue = parseInt(shopSectionNumber2[index].textContent);
+        if (currentValue > 1) {
+            shopSectionNumber2[index].textContent = currentValue - 1;
+            updateTotalPrice(index, currentValue - 1); 
+        } else {
+            shopSectionNumber2[index].textContent = 1;
+            updateTotalPrice(index, 1); 
+        }
+    });
 });
 
-countPlusshop.addEventListener('click', function () {
-    let currentValue = parseInt(countNumbershop.textContent);
-
-    if (currentValue < 20) {
-        countNumbershop.textContent = currentValue + 1;
-        updatePrice(currentValue + 1);
-    } else {
-        countNumbershop.textContent = 20;
-        updatePrice(20);
-    }
+shopSectionButtonPlus2.forEach(function (item, index) {
+    item.addEventListener('click', function () {
+        let currentValue = parseInt(shopSectionNumber2[index].textContent);
+        if (currentValue < 20) {
+            shopSectionNumber2[index].textContent = currentValue + 1;
+            updateTotalPrice(index, currentValue + 1); 
+        } else {
+            shopSectionNumber2[index].textContent = 20;
+            updateTotalPrice(index, 20); 
+        }
+    });
 });
 
-function updatePrice(quantity) {
-    // Assuming price is $10 per item
-    const pricePerItem = 10;
-    countPriceshop.textContent = `$${quantity * pricePerItem}`;
+ 
+function updateTotalPrice(index, quantity) {
+    const pricePerUnit = 119.00;
+    shop__cartTotalPrice[index].textContent = `$${(quantity * pricePerUnit).toFixed(2)}`;
 }
+
+let shop__sectionCounterBtnAdd = document.querySelector(".shop__section-counter-btn-add");
+let cart__number = document.querySelector("#cart__number");
+
+shop__sectionCounterBtnAdd.addEventListener('click', function() {
+    let currentValue = parseInt(cart__number.textContent);
+
+    if (!isNaN(currentValue)) {
+        cart__number.textContent = currentValue + 1;
+    } else {
+        cart__number.textContent = 1;
+    }
+});

@@ -68,3 +68,5 @@ function setMaxInput() {
     maxVal.value = priceInputMax.value;
     slideMax();
 }
+
+
