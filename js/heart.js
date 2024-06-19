@@ -1,7 +1,19 @@
 const heartButton = document.querySelector('.heart-button-2');
+const particles = document.querySelectorAll('.particle');
 
 heartButton.addEventListener('click', () => {
     heartButton.classList.toggle('clicked');
+
+    if (heartButton.classList.contains('clicked')) {
+        particles.forEach((particle, index) => {
+            setTimeout(() => {
+                particle.style.animation = 'none';
+                particle.offsetHeight; // trigger reflow
+                particle.style.animation = '';
+                particle.style.animation = 'pop 0.8s ease forwards';
+            }, index * 100);
+        });
+    }
 });
 
 

@@ -485,6 +485,7 @@ body {
     height: 100%;
     transform-origin: center;
     object-fit: cover;
+    cursor: zoom-in;
 }
 
 .section__plants-card {
@@ -1309,13 +1310,75 @@ body {
     stroke-width: 2;
 }
 
-.heart-button-2.clicked .heart-path {
-    stroke: red;
+.heart-button-2 {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.heart-button-2.clicked {
-    outline: none;
+.heart-button-2 .heart-icon-2 {
+    display: flex;
+    width: 40px;
+    height: 40px;
 }
+
+.heart-path {
+    transition: stroke 0.3s, fill 0.3s;
+}
+
+.heart-button-2.clicked .heart-path {
+    stroke: red;
+    fill: red;
+}
+
+.heart-button-2.clicked .particle {
+    display: block;
+    animation: pop 0.8s ease forwards;
+}
+
+.particle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+    display: none;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 
 .shop__section-about-product {
